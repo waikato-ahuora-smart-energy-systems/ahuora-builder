@@ -50,7 +50,7 @@ from .diagnostics.infeasibilities import print_infeasibilities
 # To be used as placeholders until bespoke functions can be developed.
 from .custom import hda_reaction as reaction_props
 from .custom.hda_ideal_VLE import HDAParameterBlock
-from ..packages.properties_manager import PropertyComponent
+from ahuora_builder.properties_manager import PropertyComponent
 from property_packages.build_package import build_package
 
 # from amplpy import modules
