@@ -1,0 +1,377 @@
+{
+    "id": 4,
+    "dynamic": false,
+    "property_packages": [
+        {
+            "id": 0,
+            "type": "peng-robinson",
+            "compounds": [
+                "propane",
+                "water"
+            ],
+            "phases": [
+                "Liq",
+                "Vap"
+            ]
+        }
+    ],
+    "unit_models": [
+        {
+            "id": 21,
+            "type": "compoundSeparator",
+            "name": "Compound Separator 21",
+            "args": {
+                "property_package": 0,
+                "num_outlets": 2
+            },
+            "properties": {
+                "split_fraction": {
+                    "data": [
+                        {
+                            "discrete_indexes": [
+                                "outlet_2",
+                                "water"
+                            ],
+                            "id": 313,
+                            "value": [
+                                0.3
+                            ],
+                            "guess": true
+                        },
+                        {
+                            "discrete_indexes": [
+                                "outlet_2",
+                                "propane"
+                            ],
+                            "id": 318,
+                            "value": [
+                                0.2
+                            ]
+                        }
+                    ],
+                    "unit": "dimensionless"
+                }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 13,
+                    "properties": {
+                        "flow_mol": {
+                            "data": [
+                                {
+                                    "id": 280,
+                                    "value": [
+                                        33.0
+                                    ]
+                                }
+                            ],
+                            "unit": "mol/s"
+                        },
+                        "pressure": {
+                            "data": [
+                                {
+                                    "id": 282,
+                                    "value": [
+                                        1.0
+                                    ]
+                                }
+                            ],
+                            "unit": "atm"
+                        },
+                        "enth_mass": {
+                            "data": [
+                                {
+                                    "id": 285
+                                }
+                            ]
+                        },
+                        "enth_mol": {
+                            "data": [
+                                {
+                                    "id": 284
+                                }
+                            ]
+                        },
+                        "mole_frac_comp": {
+                            "data": [
+                                {
+                                    "discrete_indexes": [
+                                        "propane"
+                                    ],
+                                    "id": 319,
+                                    "value": [
+                                        0.6
+                                    ]
+                                },
+                                {
+                                    "discrete_indexes": [
+                                        "water"
+                                    ],
+                                    "id": 314,
+                                    "value": [
+                                        0.4
+                                    ]
+                                }
+                            ],
+                            "unit": "dimensionless"
+                        },
+                        "temperature": {
+                            "data": [
+                                {
+                                    "id": 281,
+                                    "value": [
+                                        2.0
+                                    ]
+                                }
+                            ],
+                            "unit": "degC"
+                        },
+                        "vapor_frac": {
+                            "data": [
+                                {
+                                    "id": 283
+                                }
+                            ]
+                        },
+                        "flow_mass": {
+                            "data": [
+                                {
+                                    "id": 279
+                                }
+                            ]
+                        },
+                        "flow_vol": {
+                            "data": [
+                                {
+                                    "id": 289
+                                }
+                            ]
+                        },
+                        "entr_mass": {
+                            "data": [
+                                {
+                                    "id": 287
+                                }
+                            ]
+                        },
+                        "entr_mol": {
+                            "data": [
+                                {
+                                    "id": 286
+                                }
+                            ]
+                        },
+                        "total_energy_flow": {
+                            "data": [
+                                {
+                                    "id": 288
+                                }
+                            ]
+                        }
+                    }
+                },
+                "outlet_1": {
+                    "id": 14,
+                    "properties": {
+                        "flow_mol": {
+                            "data": [
+                                {
+                                    "id": 291
+                                }
+                            ]
+                        },
+                        "pressure": {
+                            "data": [
+                                {
+                                    "id": 293
+                                }
+                            ]
+                        },
+                        "enth_mass": {
+                            "data": [
+                                {
+                                    "id": 296
+                                }
+                            ]
+                        },
+                        "enth_mol": {
+                            "data": [
+                                {
+                                    "id": 295
+                                }
+                            ]
+                        },
+                        "mole_frac_comp": {
+                            "data": [
+                                {
+                                    "discrete_indexes": [
+                                        "water"
+                                    ],
+                                    "id": 315
+                                },
+                                {
+                                    "discrete_indexes": [
+                                        "propane"
+                                    ],
+                                    "id": 320
+                                }
+                            ]
+                        },
+                        "temperature": {
+                            "data": [
+                                {
+                                    "id": 292
+                                }
+                            ]
+                        },
+                        "vapor_frac": {
+                            "data": [
+                                {
+                                    "id": 294
+                                }
+                            ]
+                        },
+                        "flow_mass": {
+                            "data": [
+                                {
+                                    "id": 290,
+                                    "value": 0.86,
+                                    "controlled": 313
+                                }
+                            ],
+                            "unit": "kg/s"
+                        },
+                        "flow_vol": {
+                            "data": [
+                                {
+                                    "id": 300
+                                }
+                            ]
+                        },
+                        "entr_mass": {
+                            "data": [
+                                {
+                                    "id": 298
+                                }
+                            ]
+                        },
+                        "entr_mol": {
+                            "data": [
+                                {
+                                    "id": 297
+                                }
+                            ]
+                        },
+                        "total_energy_flow": {
+                            "data": [
+                                {
+                                    "id": 299
+                                }
+                            ]
+                        }
+                    }
+                },
+                "outlet_2": {
+                    "id": 15,
+                    "properties": {
+                        "flow_mol": {
+                            "data": [
+                                {
+                                    "id": 302
+                                }
+                            ]
+                        },
+                        "pressure": {
+                            "data": [
+                                {
+                                    "id": 304
+                                }
+                            ]
+                        },
+                        "enth_mass": {
+                            "data": [
+                                {
+                                    "id": 307
+                                }
+                            ]
+                        },
+                        "enth_mol": {
+                            "data": [
+                                {
+                                    "id": 306
+                                }
+                            ]
+                        },
+                        "mole_frac_comp": {
+                            "data": [
+                                {
+                                    "discrete_indexes": [
+                                        "water"
+                                    ],
+                                    "id": 316
+                                },
+                                {
+                                    "discrete_indexes": [
+                                        "propane"
+                                    ],
+                                    "id": 321
+                                }
+                            ]
+                        },
+                        "temperature": {
+                            "data": [
+                                {
+                                    "id": 303
+                                }
+                            ]
+                        },
+                        "vapor_frac": {
+                            "data": [
+                                {
+                                    "id": 305
+                                }
+                            ]
+                        },
+                        "flow_mass": {
+                            "data": [
+                                {
+                                    "id": 301
+                                }
+                            ]
+                        },
+                        "flow_vol": {
+                            "data": [
+                                {
+                                    "id": 311
+                                }
+                            ]
+                        },
+                        "entr_mass": {
+                            "data": [
+                                {
+                                    "id": 309
+                                }
+                            ]
+                        },
+                        "entr_mol": {
+                            "data": [
+                                {
+                                    "id": 308
+                                }
+                            ]
+                        },
+                        "total_energy_flow": {
+                            "data": [
+                                {
+                                    "id": 310
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "arcs": [],
+    "specification": []
+}

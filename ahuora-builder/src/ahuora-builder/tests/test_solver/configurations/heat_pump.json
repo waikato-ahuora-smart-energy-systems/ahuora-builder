@@ -1,0 +1,137 @@
+{
+    "id": 1,
+    "dynamic": false,
+    "property_packages": [
+        {
+            "id": 3,
+            "type": "helmholtz",
+            "compounds": ["h2o"],
+            "phases": ["Liq", "Vap"]
+        }
+    ], 
+    "unit_models": [
+        {
+            "id": 2,
+            "type": "compressor",
+            "name": "C-1",
+            "args": {
+                "property_package": 3
+            },
+            "properties": {
+                "efficiency_isentropic": { "data": [ { "id": 1, "value": 0.95 } ], "unit": "dimensionless" }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 3,
+                    "properties": {
+                        "flow_mol": { "data": [ { "id": 2, "value": 431.0 } ], "unit": "mol/min" },
+                        "enth_mol": { "data": [ { "id": 3, "value": 50.0 } ], "unit": "kJ/mol" },
+                        "pressure": { "data": [ { "id": 4, "value": 101328.0 } ], "unit": "Pa" }
+                    }
+                },
+                "outlet": {
+                    "id": 4,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 5, "value": 10 } ], "unit": "atm" }
+                    }
+                }
+            }
+        },
+        {
+            "id": 3,
+            "type": "turbine",
+            "name": "X-2",
+            "args": {
+                "property_package": 3
+            },
+            "properties": {
+                "efficiency_isentropic": { "data": [ { "id": 6, "value": 1.0 } ], "unit": "dimensionless" },
+                "efficiency_motor":{ "data": [ { "id": 7, "value": 1.0 } ], "unit": "dimensionless" }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 5,
+                    "properties": {}
+                },
+                "outlet": {
+                    "id": 6,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 8, "value": 1 } ], "unit": "atm" }
+                    }
+                }
+            }
+        },
+        {
+            "id": 5,
+            "type": "cooler",
+            "name": "CL-4",
+            "args": {
+                "property_package": 3
+            },
+            "properties": {},
+            "ports": {
+                "inlet": {
+                    "id": 9,
+                    "properties": {}
+                },
+                "outlet": {
+                    "id": 10,
+                    "properties": {
+                        "enth_mol": { "data": [ { "id": 9, "value": 49.0 } ], "unit": "kJ/mol" }
+                    }
+                }
+            }
+        },
+        {
+            "id": 4,
+            "type": "heater",
+            "name": "HT-3",
+            "args": {
+                "property_package": 3,
+                "has_pressure_change": true
+            },
+            "properties": {
+                "deltaP": { "data": [ { "id": 10, "value": 0.0 } ], "unit": "Pa" }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 7,
+                    "properties": {}
+                },
+                "outlet": {
+                    "id": 8,
+                    "properties": {
+                        "enth_mol": { "data": [ { "id": 11, "value": 50.0 } ], "unit": "kJ/mol" }
+                    }
+                }
+            }
+        }
+    ],
+    "arcs": [
+        {
+            "id": 10,
+            "source": 10,
+            "destination": 5
+        },
+        {
+            "id": 9,
+            "source": 4,
+            "destination": 9
+        },
+        {
+            "id": 6,
+            "source": 6,
+            "destination": 7
+        },
+        {
+            "id": 8,
+            "source": 8,
+            "destination": 3,
+            "tear_guess": {
+                "flow_mol": true,
+                "enth_mol": false,
+                "pressure": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+[project]
+name = "ahuora-builder"
+version = "0.1.0"
+description = "Load a Ahuora .JSON file into a pyomo model."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "ahuora-compounds",
+    "common",
+    "coverage==7.11.3",
+    "idaes-pse==2.8.0",
+    "pyomo==6.9.2",
+    "scikit-learn==1.7.2",
+    "scipy==1.16.3",
+    "typing-validation==1.2.4",
+]
+
+[tool.uv.sources]
+ahuora-compounds = { git = "https://github.com/waikato-ahuora-smart-energy-systems/PropertyPackages.git", rev = "v0.0.29" }
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.1",
+    "pytest-test-groups>=1.2.1",
+    "uvicorn[standard]==0.34.3",
+]

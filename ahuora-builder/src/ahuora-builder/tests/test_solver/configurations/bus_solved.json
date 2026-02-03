@@ -1,0 +1,50 @@
+{
+    "id": 4,
+    "properties": [
+        {
+            "id": 468,
+            "name": "fs.Link 55_55.efficiency[0.0]",
+            "value": [
+                0.5
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 467,
+            "name": "fs.Link 55_55.properties_in[0.0].power",
+            "value": [
+                500.0
+            ],
+            "unit": "W",
+            "unknown_units": false
+        },
+        {
+            "id": 470,
+            "name": "fs.Link 55_55.properties_out[0.0].power",
+            "value": [
+                250.0
+            ],
+            "unit": "W",
+            "unknown_units": false
+        },
+        {
+            "id": 465,
+            "name": "fs.Link 22_52.efficiency[0.0]",
+            "value": [
+                0.5
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 466,
+            "name": "fs.Link 22_52.properties_in[0.0].power",
+            "value": [
+                1000.0
+            ],
+            "unit": "W",
+            "unknown_units": false
+        }
+    ]
+}

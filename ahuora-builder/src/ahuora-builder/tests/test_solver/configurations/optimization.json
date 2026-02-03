@@ -1,0 +1,62 @@
+{
+    "id": 0,
+    "name": "optimization_test",
+    "description": "tests optimizing an expression",
+    "dynamic": false,
+    "property_packages": [],
+    "unit_models": [
+        {
+            "id": 3,
+            "type": "compressor",
+            "name": "Compressor1",
+            "args": {
+                "property_package": -1
+            },
+            "properties": {
+                "deltaP": { "data": [ { "id": 1, "value": 50000 } ], "unit": "Pa" },
+                "efficiency_isentropic": { "data": [ { "id": 2, "value": 0.9 } ], "unit": null }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 1,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 3, "value": 100000 } ], "unit": "Pa" },
+                        "temperature": { "data": [ { "id": 4, "value": 300 } ], "unit": "degC" },
+                        "flow_mol": { "data": [ { "id": 5, "value": 1 } ], "unit": "mol/s" }
+                    }
+                },
+                "outlet": {
+                    "id": 2,
+                    "properties": {}
+                }
+            }
+        }
+    ],
+    "arcs": [],
+    "expressions": [
+        {
+            "id": 6,
+            "name": "Expression to optimize. We unfix both variables and expressions here to test both.",
+            "expression": "0.5 - id_2 ^ 2"
+        }
+    ],
+    "optimizations": [
+        {
+            "objective": 6,
+            "sense": "maximize",
+            "unfixed_variables": [{
+                "id":2,
+                "lower_bound": 0.1 ,
+                "upper_bound": 1
+            },{
+                "id":6,
+                "lower_bound": -1000 ,
+                "upper_bound": 1000000
+            },{
+                "id":4,
+                "lower_bound": 299 ,
+                "upper_bound": 300
+            }]
+        }
+    ]
+}

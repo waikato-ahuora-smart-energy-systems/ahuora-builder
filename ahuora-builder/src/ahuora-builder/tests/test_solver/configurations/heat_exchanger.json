@@ -1,0 +1,63 @@
+{
+    "id": 0,
+    "name": "heat_exchanger_test",
+    "description": "https://idaes-pse.readthedocs.io/en/stable/reference_guides/model_libraries/generic/unit_models/heat_exchanger.html",
+    "dynamic": false,
+    "property_packages": [],
+    "unit_models": [
+        {
+            "id": 8,
+            "type": "heatExchanger",
+            "name": "heat_exchanger-1",
+            "properties": {
+                "overall_heat_transfer_coefficient": { "data": [ { "id": 1, "value": 100 } ], "unit": "W/(m**2*K)" },
+                "area": { "data": [{ "id": 2, "value": 1000}] , "unit": "m**2" },
+                "hot_side.deltaP": { "data": [ { "id": 3, "value": 100 } ], "unit": "Pa" },
+                "cold_side.deltaP": { "data": [ { "id": 4, "value": 100 } ], "unit": "Pa" }
+            },
+            "args": {
+                "hot_side": {"property_package": -1},
+                "cold_side":{"property_package": -1}
+            },
+            "ports": {
+                "hot_side_inlet": {
+                    "id": 1,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 3, "value": 101325 } ], "unit": "Pa" },
+                        "enth_mol": { "data": [ { "id": 4, "value": 40000 } ], "unit": "J/mol" },
+                        "flow_mol": { "data": [ { "id": 5, "value": 100 } ], "unit": "mol/s" }
+                    }
+                },
+                "cold_side_inlet": {
+                    "id": 2,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 6, "value": 101325 } ], "unit": "Pa" },
+                        "enth_mol": { "data": [ { "id": 7, "value": 30000 } ], "unit": "J/mol" },
+                        "flow_mol": { "data": [ { "id": 8, "value": 100 } ], "unit": "mol/s" }
+                    }
+                },
+                "hot_side_outlet": {
+                    "id": 3,
+                    "properties":{
+                        "temperature": { "data": [ { "id": 9   }]}
+                    }
+                },
+                "cold_side_outlet": {
+                    "id": 4,
+                    "properties": {
+                        "temperature": { "data": [ { "id": 10 } ]}
+                    }
+                }
+            }
+            
+        }
+    ],
+    "arcs": [],
+    "expressions": [
+        {
+            "id": 129,
+            "name": "Test Expressions works with heat exchanger area (not indexed by time)",
+            "expression": "id_2 * 10"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": 2,
+  "dynamic": false,
+  "property_packages": [],
+  "unit_models": [
+    {
+      "id": 25,
+      "type": "solar",
+      "name": "solar 25",
+      "args": {},
+      "properties": {
+        "efficiency": {
+          "data": [{
+            "id": 266,
+            "value": 95.0,
+            "controlled": false,
+            "guess": false
+          }],
+          "unit": "percent"
+        },
+        "area": {
+          "data": [{
+            "id": 268,
+            "value": 5.0,
+            "controlled": false,
+            "guess": false
+          }],
+          "unit": "m^2"
+        },
+        "irradiation": {
+          "data": [ {
+              "id": 267,
+              "value": 200.0,
+              "controlled": false,
+              "guess": false
+            }
+        ],
+          "unit": "kW/m^2"
+        },
+        "panel_count": {
+          "data": [{
+            "id": 269,
+            "value": 2.0,
+            "controlled": false,
+            "guess": false
+          }],
+          "unit": "dimensionless"
+        }
+      },
+      "ports": {
+        "outlet": {
+          "id": 16,
+          "properties": {
+            "power": {
+              "data": [ {
+                  "id": 270
+                }
+            ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "arcs": [],
+  "expressions": []
+}

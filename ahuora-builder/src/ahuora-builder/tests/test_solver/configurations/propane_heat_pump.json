@@ -1,0 +1,167 @@
+{
+    "id": 0,
+    "name": "propane_heat_pump",
+    "description": "ahuora day propane heat pump",
+    "dynamic": false,
+    "property_packages": [
+        {
+            "id": 1,
+            "type": "helmholtz",
+            "compounds": ["propane"],
+            "phases": ["Liq", "Vap"]
+        },
+        {
+            "id": 2,
+            "type": "helmholtz",
+            "compounds": ["water"],
+            "phases": ["Liq", "Vap"]
+        }
+    ], 
+    "unit_models": [
+        {
+            "id": 1,
+            "type": "compressor",
+            "name": "Compressor",
+            "args": {
+                "property_package": 1
+            },
+            "properties": {
+                "efficiency_isentropic": { "data": [ { "id": 1, "value": 70 } ], "unit": "percent" }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 1,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 2, "value": 0.5 } ], "unit": "MPa" },
+                        "vapor_frac": { "data": [ { "id": 3, "value": 0 } ], "unit": "dimensionless" },
+                        "flow_mol": { "data": [ { "id": 4, "value": 2 } ], "unit": "mol/s" }
+                    }
+                },
+                "outlet": {
+                    "id": 2,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 5, "value": 2000 } ], "unit": "kPa" }
+                    }
+                }
+            }
+        },
+        {
+            "id": 2,
+            "type": "heatExchanger",
+            "name": "Condenser",
+            "args": {
+                "hot_side": {
+                    "property_package": 1
+                },
+                "cold_side": {
+                    "property_package": 2
+                }
+            },
+            "properties": {
+                "area": { "data": [{ "id": 6, "value": 1 }], "unit": "m**2" },
+                "hot_side.deltaP": { "data": [ { "id": 7, "value": 0 } ], "unit": "Pa" },
+                "cold_side.deltaP": { "data": [ { "id": 8, "value": 0 } ], "unit": "Pa" }
+            },
+            "ports": {
+                "cold_side_inlet": {
+                    "id": 3,
+                    "properties": {
+                        "temperature": { "data": [ { "id": 9, "value": 15 } ], "unit": "degC" },
+                        "pressure": { "data": [ { "id": 10, "value": 1 } ], "unit": "bar" },
+                        "flow_mass": { "data": [ { "id": 11, "value": 0.5 } ], "unit": "kg/s" }
+                    }
+                },
+                "cold_side_outlet": {
+                    "id": 4,
+                    "properties": {}
+                },
+                "hot_side_inlet": {
+                    "id": 5,
+                    "properties": {}
+                },
+                "hot_side_outlet": {
+                    "id": 6,
+                    "properties": {
+                        "temperature": { "data": [ { "id": 12, "value": 20 } ], "unit": "degC" }
+                    }
+                }
+            }
+        },
+        {
+            "id": 3,
+            "type": "valve",
+            "name": "Exp Valve",
+            "args": {
+                "property_package": 1,
+                "enable_coefficients": true
+            },
+            "properties": {
+                "valve_opening": { "data": [ { "id": 13, "value": 0.6 } ], "unit": "dimensionless" }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 7,
+                    "properties": {}
+                },
+                "outlet": {
+                    "id": 8,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 14, "value": 0.5 } ], "unit": "MPa" }
+                    }
+                }
+            }
+        },
+        {
+            "id": 4,
+            "type": "cooler",
+            "name": "Cooler",
+            "args": {
+                "property_package": 1,
+                "has_pressure_change": true
+            },
+            "properties": {
+                "deltaP": { "data": [ { "id": 15, "value": 0 } ], "unit": "Pa" }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 9,
+                    "properties": {}
+                },
+                "outlet": {
+                    "id": 10,
+                    "properties": {
+                        "temperature": { "data": [ { "id": 16, "value": 2 } ], "unit": "degC" },
+                        "total_energy_flow": { "data": [ { "id": 17 } ], "unit": "W" }
+                    }
+                }
+            }
+        }
+    ],
+    "arcs": [
+        {
+            "id": 1,
+            "source": 2,
+            "destination": 5
+        },
+        {
+            "id": 2,
+            "source": 6,
+            "destination": 7
+        },
+        {
+            "id": 3,
+            "source": 8,
+            "destination": 9
+        },
+        {
+            "id": 4,
+            "source": 10,
+            "destination": 1,
+            "tear_guess": {
+                "flow_mol": true,
+                "pressure": false,
+                "enth_mol": false
+            }
+        }
+    ]
+}

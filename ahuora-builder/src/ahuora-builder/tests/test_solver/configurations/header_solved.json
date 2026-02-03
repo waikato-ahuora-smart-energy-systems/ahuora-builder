@@ -1,0 +1,761 @@
+{
+    "id": 1,
+    "properties": [
+        {
+            "id": 18,
+            "name": "fs.Header1_2.splitter.outlet_1_state[0.0].flow_mol",
+            "value": [
+                0.1
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 19,
+            "name": "fs.Header1_2.splitter.outlet_2_state[0.0].flow_mol",
+            "value": [
+                0.3
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 20,
+            "name": "fs.Header1_2.splitter.vent_state[0.0].flow_mol",
+            "value": [
+                0.6000000214092902
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 21,
+            "name": "fs.Header1_2.cooler.heat_duty_inverted[0.0]",
+            "value": [
+                0.0
+            ],
+            "unit": "kg*m**2/s**3",
+            "unknown_units": false
+        },
+        {
+            "id": 22,
+            "name": "fs.Header1_2.cooler.deltaP_inverted[0.0]",
+            "value": [
+                0.0
+            ],
+            "unit": "kg/m/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 23,
+            "name": "fs.Header1_2.cooler.control_volume.properties_out[0.0].flow_mass",
+            "value": [
+                0.01801526806429856
+            ],
+            "unit": "kg/s",
+            "unknown_units": false
+        },
+        {
+            "id": 24,
+            "name": "fs.Header1_2.cooler.control_volume.properties_out[0.0].flow_mol",
+            "value": [
+                1.0000000035691148
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 25,
+            "name": "fs.Header1_2.balance_flow_mol[0.0]",
+            "value": [
+                0.6000000178361474
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 26,
+            "name": "fs.Header1_2.cooler.control_volume.properties_out[0.0].temperature",
+            "value": [
+                473.1499948046953
+            ],
+            "unit": "K",
+            "unknown_units": false
+        },
+        {
+            "id": 27,
+            "name": "fs.Header1_2.degree_of_superheat[0.0]",
+            "value": [
+                100.39406074421987
+            ],
+            "unit": "K",
+            "unknown_units": false
+        },
+        {
+            "id": 28,
+            "name": "fs.Header1_2.cooler.control_volume.properties_out[0.0].pressure",
+            "value": [
+                100000.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 29,
+            "name": "fs.Header1_2.cooler.control_volume.properties_out[0.0].vapor_frac",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 30,
+            "name": "fs.Header1_2.cooler.control_volume.properties_out[0.0].enth_mass",
+            "value": [
+                2875348.331852442
+            ],
+            "unit": "J/kg",
+            "unknown_units": false
+        },
+        {
+            "id": 31,
+            "name": "fs.Header1_2.cooler.control_volume.properties_out[0.0].enth_mol",
+            "value": [
+                51800.17079167468
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 55,
+            "name": "fs.Header1_2.mixer.inlet_1_state[0.0].flow_mol",
+            "value": [
+                1.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 57,
+            "name": "fs.Header1_2.mixer.inlet_1_state[0.0].pressure",
+            "value": [
+                100000.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 60,
+            "name": "fs.Header1_2.mixer.inlet_1_state[0.0].enth_mass",
+            "value": [
+                2875348.342114889
+            ],
+            "unit": "J/kg",
+            "unknown_units": false
+        },
+        {
+            "id": 59,
+            "name": "fs.Header1_2.mixer.inlet_1_state[0.0].enth_mol",
+            "value": [
+                51800.17097655542
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 93,
+            "name": "fs.Header1_2.mixer.inlet_1_state[0.0].mole_frac_comp[water]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 94,
+            "name": "fs.Header1_2.mixer.inlet_1_state[0.0].mole_frac_phase_comp[Liq,water]",
+            "value": [
+                0.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 95,
+            "name": "fs.Header1_2.mixer.inlet_1_state[0.0].mole_frac_phase_comp[Vap,water]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 56,
+            "name": "fs.Header1_2.mixer.inlet_1_state[0.0].temperature",
+            "value": [
+                473.15000000000003
+            ],
+            "unit": "K",
+            "unknown_units": false
+        },
+        {
+            "id": 58,
+            "name": "fs.Header1_2.mixer.inlet_1_state[0.0].vapor_frac",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 54,
+            "name": "fs.Header1_2.mixer.inlet_1_state[0.0].flow_mass",
+            "value": [
+                0.018015268
+            ],
+            "unit": "kg/s",
+            "unknown_units": false
+        },
+        {
+            "id": 64,
+            "name": "fs.Header1_2.mixer.inlet_1_state[0.0].flow_vol",
+            "value": [
+                0.03913256377690678
+            ],
+            "unit": "m**3/s",
+            "unknown_units": false
+        },
+        {
+            "id": 62,
+            "name": "fs.Header1_2.mixer.inlet_1_state[0.0].entr_mass",
+            "value": [
+                7835.344300105948
+            ],
+            "unit": "J/K/kg",
+            "unknown_units": false
+        },
+        {
+            "id": 61,
+            "name": "fs.Header1_2.mixer.inlet_1_state[0.0].entr_mol",
+            "value": [
+                141.1558274386811
+            ],
+            "unit": "J/K/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 63,
+            "name": "fs.Header1_2.mixer.inlet_1_state[0.0].total_energy_flow",
+            "value": [
+                51800.17097655542
+            ],
+            "unit": "J/s",
+            "unknown_units": false
+        },
+        {
+            "id": 66,
+            "name": "fs.Header1_2.splitter.outlet_1_state[0.0].flow_mol",
+            "value": [
+                0.1
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 68,
+            "name": "fs.Header1_2.splitter.outlet_1_state[0.0].pressure",
+            "value": [
+                100000.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 71,
+            "name": "fs.Header1_2.splitter.outlet_1_state[0.0].enth_mass",
+            "value": [
+                2875348.3216531193
+            ],
+            "unit": "J/kg",
+            "unknown_units": false
+        },
+        {
+            "id": 70,
+            "name": "fs.Header1_2.splitter.outlet_1_state[0.0].enth_mol",
+            "value": [
+                51800.17060793115
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 96,
+            "name": "fs.Header1_2.splitter.outlet_1_state[0.0].mole_frac_comp[water]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 97,
+            "name": "fs.Header1_2.splitter.outlet_1_state[0.0].mole_frac_phase_comp[Liq,water]",
+            "value": [
+                0.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 98,
+            "name": "fs.Header1_2.splitter.outlet_1_state[0.0].mole_frac_phase_comp[Vap,water]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 67,
+            "name": "fs.Header1_2.splitter.outlet_1_state[0.0].temperature",
+            "value": [
+                473.1499896413472
+            ],
+            "unit": "K",
+            "unknown_units": false
+        },
+        {
+            "id": 69,
+            "name": "fs.Header1_2.splitter.outlet_1_state[0.0].vapor_frac",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 65,
+            "name": "fs.Header1_2.splitter.outlet_1_state[0.0].flow_mass",
+            "value": [
+                0.0018015268000000002
+            ],
+            "unit": "kg/s",
+            "unknown_units": false
+        },
+        {
+            "id": 75,
+            "name": "fs.Header1_2.splitter.outlet_1_state[0.0].flow_vol",
+            "value": [
+                0.003913256290172173
+            ],
+            "unit": "m**3/s",
+            "unknown_units": false
+        },
+        {
+            "id": 73,
+            "name": "fs.Header1_2.splitter.outlet_1_state[0.0].entr_mass",
+            "value": [
+                7835.344256855369
+            ],
+            "unit": "J/K/kg",
+            "unknown_units": false
+        },
+        {
+            "id": 72,
+            "name": "fs.Header1_2.splitter.outlet_1_state[0.0].entr_mol",
+            "value": [
+                141.15582665951032
+            ],
+            "unit": "J/K/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 74,
+            "name": "fs.Header1_2.splitter.outlet_1_state[0.0].total_energy_flow",
+            "value": [
+                5180.017060793115
+            ],
+            "unit": "J/s",
+            "unknown_units": false
+        },
+        {
+            "id": 77,
+            "name": "fs.Header1_2.splitter.outlet_2_state[0.0].flow_mol",
+            "value": [
+                0.3
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 79,
+            "name": "fs.Header1_2.splitter.outlet_2_state[0.0].pressure",
+            "value": [
+                100000.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 82,
+            "name": "fs.Header1_2.splitter.outlet_2_state[0.0].enth_mass",
+            "value": [
+                2875348.3216531193
+            ],
+            "unit": "J/kg",
+            "unknown_units": false
+        },
+        {
+            "id": 81,
+            "name": "fs.Header1_2.splitter.outlet_2_state[0.0].enth_mol",
+            "value": [
+                51800.17060793115
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 99,
+            "name": "fs.Header1_2.splitter.outlet_2_state[0.0].mole_frac_comp[water]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 100,
+            "name": "fs.Header1_2.splitter.outlet_2_state[0.0].mole_frac_phase_comp[Liq,water]",
+            "value": [
+                0.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 101,
+            "name": "fs.Header1_2.splitter.outlet_2_state[0.0].mole_frac_phase_comp[Vap,water]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 78,
+            "name": "fs.Header1_2.splitter.outlet_2_state[0.0].temperature",
+            "value": [
+                473.1499896413472
+            ],
+            "unit": "K",
+            "unknown_units": false
+        },
+        {
+            "id": 80,
+            "name": "fs.Header1_2.splitter.outlet_2_state[0.0].vapor_frac",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 76,
+            "name": "fs.Header1_2.splitter.outlet_2_state[0.0].flow_mass",
+            "value": [
+                0.0054045804
+            ],
+            "unit": "kg/s",
+            "unknown_units": false
+        },
+        {
+            "id": 86,
+            "name": "fs.Header1_2.splitter.outlet_2_state[0.0].flow_vol",
+            "value": [
+                0.011739768870516518
+            ],
+            "unit": "m**3/s",
+            "unknown_units": false
+        },
+        {
+            "id": 84,
+            "name": "fs.Header1_2.splitter.outlet_2_state[0.0].entr_mass",
+            "value": [
+                7835.344256855369
+            ],
+            "unit": "J/K/kg",
+            "unknown_units": false
+        },
+        {
+            "id": 83,
+            "name": "fs.Header1_2.splitter.outlet_2_state[0.0].entr_mol",
+            "value": [
+                141.15582665951032
+            ],
+            "unit": "J/K/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 85,
+            "name": "fs.Header1_2.splitter.outlet_2_state[0.0].total_energy_flow",
+            "value": [
+                15540.051182379344
+            ],
+            "unit": "J/s",
+            "unknown_units": false
+        },
+        {
+            "id": 44,
+            "name": "fs.Header1_2.splitter.vent_state[0.0].flow_mol",
+            "value": [
+                0.6000000214092902
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 46,
+            "name": "fs.Header1_2.splitter.vent_state[0.0].pressure",
+            "value": [
+                100000.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 49,
+            "name": "fs.Header1_2.splitter.vent_state[0.0].enth_mass",
+            "value": [
+                2875348.3216531193
+            ],
+            "unit": "J/kg",
+            "unknown_units": false
+        },
+        {
+            "id": 48,
+            "name": "fs.Header1_2.splitter.vent_state[0.0].enth_mol",
+            "value": [
+                51800.17060793115
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 90,
+            "name": "fs.Header1_2.splitter.vent_state[0.0].mole_frac_comp[water]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 91,
+            "name": "fs.Header1_2.splitter.vent_state[0.0].mole_frac_phase_comp[Liq,water]",
+            "value": [
+                0.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 92,
+            "name": "fs.Header1_2.splitter.vent_state[0.0].mole_frac_phase_comp[Vap,water]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 45,
+            "name": "fs.Header1_2.splitter.vent_state[0.0].temperature",
+            "value": [
+                473.1499896413472
+            ],
+            "unit": "K",
+            "unknown_units": false
+        },
+        {
+            "id": 47,
+            "name": "fs.Header1_2.splitter.vent_state[0.0].vapor_frac",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 43,
+            "name": "fs.Header1_2.splitter.vent_state[0.0].flow_mass",
+            "value": [
+                0.010809161185694102
+            ],
+            "unit": "kg/s",
+            "unknown_units": false
+        },
+        {
+            "id": 53,
+            "name": "fs.Header1_2.splitter.vent_state[0.0].flow_vol",
+            "value": [
+                0.023479538578833434
+            ],
+            "unit": "m**3/s",
+            "unknown_units": false
+        },
+        {
+            "id": 51,
+            "name": "fs.Header1_2.splitter.vent_state[0.0].entr_mass",
+            "value": [
+                7835.344256855369
+            ],
+            "unit": "J/K/kg",
+            "unknown_units": false
+        },
+        {
+            "id": 50,
+            "name": "fs.Header1_2.splitter.vent_state[0.0].entr_mol",
+            "value": [
+                141.15582665951032
+            ],
+            "unit": "J/K/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 52,
+            "name": "fs.Header1_2.splitter.vent_state[0.0].total_energy_flow",
+            "value": [
+                31080.10347376358
+            ],
+            "unit": "J/s",
+            "unknown_units": false
+        },
+        {
+            "id": 33,
+            "name": "fs.Header1_2.phase_separator.condensate_outlet_state[0.0].flow_mol",
+            "value": [
+                0.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 35,
+            "name": "fs.Header1_2.phase_separator.condensate_outlet_state[0.0].pressure",
+            "value": [
+                100000.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 38,
+            "name": "fs.Header1_2.phase_separator.condensate_outlet_state[0.0].enth_mass",
+            "value": [
+                2874771.904966454
+            ],
+            "unit": "J/kg",
+            "unknown_units": false
+        },
+        {
+            "id": 37,
+            "name": "fs.Header1_2.phase_separator.condensate_outlet_state[0.0].enth_mol",
+            "value": [
+                51789.786306841204
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 87,
+            "name": "fs.Header1_2.phase_separator.condensate_outlet_state[0.0].mole_frac_comp[water]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 88,
+            "name": "fs.Header1_2.phase_separator.condensate_outlet_state[0.0].mole_frac_phase_comp[Liq,water]",
+            "value": [
+                0.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 89,
+            "name": "fs.Header1_2.phase_separator.condensate_outlet_state[0.0].mole_frac_phase_comp[Vap,water]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 34,
+            "name": "fs.Header1_2.phase_separator.condensate_outlet_state[0.0].temperature",
+            "value": [
+                472.85817940911585
+            ],
+            "unit": "K",
+            "unknown_units": false
+        },
+        {
+            "id": 36,
+            "name": "fs.Header1_2.phase_separator.condensate_outlet_state[0.0].vapor_frac",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 32,
+            "name": "fs.Header1_2.phase_separator.condensate_outlet_state[0.0].flow_mass",
+            "value": [
+                0.0
+            ],
+            "unit": "kg/s",
+            "unknown_units": false
+        },
+        {
+            "id": 42,
+            "name": "fs.Header1_2.phase_separator.condensate_outlet_state[0.0].flow_vol",
+            "value": [
+                0.0
+            ],
+            "unit": "m**3/s",
+            "unknown_units": false
+        },
+        {
+            "id": 40,
+            "name": "fs.Header1_2.phase_separator.condensate_outlet_state[0.0].entr_mass",
+            "value": [
+                7834.125493954417
+            ],
+            "unit": "J/K/kg",
+            "unknown_units": false
+        },
+        {
+            "id": 39,
+            "name": "fs.Header1_2.phase_separator.condensate_outlet_state[0.0].entr_mol",
+            "value": [
+                141.13387031922122
+            ],
+            "unit": "J/K/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 41,
+            "name": "fs.Header1_2.phase_separator.condensate_outlet_state[0.0].total_energy_flow",
+            "value": [
+                0.0
+            ],
+            "unit": "J/s",
+            "unknown_units": false
+        }
+    ]
+}

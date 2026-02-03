@@ -1,0 +1,266 @@
+{
+    "id": 24,
+    "properties": [
+        {
+            "id": 1732,
+            "name": "fs.Machine Learning 1_141.Air_Temperature[0.0]",
+            "value": [
+                10.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 1733,
+            "name": "fs.Machine Learning 1_141.Heating_Duty[0.0]",
+            "value": [
+                78.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 1734,
+            "name": "fs.Machine Learning 1_141.Work_Mechanical[0.0]",
+            "value": [
+                17.125935938565362
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 1735,
+            "name": "fs.Machine Learning 1_141.Efficiency[0.0]",
+            "value": [
+                0.2620934988661077
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 1736,
+            "name": "fs.Machine Learning 1_141.Pressure_Ratio[0.0]",
+            "value": [
+                15.533778725078927
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 1711,
+            "name": "fs.Machine Learning 1_141.properties_inlet_1[0.0].flow_mol",
+            "value": [
+                1.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 1713,
+            "name": "fs.Machine Learning 1_141.properties_inlet_1[0.0].pressure",
+            "value": [
+                100000.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 1716,
+            "name": "fs.Machine Learning 1_141.properties_inlet_1[0.0].enth_mass",
+            "value": [
+                46308.47778487785
+            ],
+            "unit": "J/kg",
+            "unknown_units": false
+        },
+        {
+            "id": 1715,
+            "name": "fs.Machine Learning 1_141.properties_inlet_1[0.0].enth_mol",
+            "value": [
+                834.2596379666207
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 1737,
+            "name": "fs.Machine Learning 1_141.properties_inlet_1[0.0].mole_frac_comp[water]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 1712,
+            "name": "fs.Machine Learning 1_141.properties_inlet_1[0.0].temperature",
+            "value": [
+                284.1499999999992
+            ],
+            "unit": "K",
+            "unknown_units": false
+        },
+        {
+            "id": 1714,
+            "name": "fs.Machine Learning 1_141.properties_inlet_1[0.0].vapor_frac",
+            "value": [
+                0.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 1710,
+            "name": "fs.Machine Learning 1_141.properties_inlet_1[0.0].flow_mass",
+            "value": [
+                0.018015268
+            ],
+            "unit": "kg/s",
+            "unknown_units": false
+        },
+        {
+            "id": 1720,
+            "name": "fs.Machine Learning 1_141.properties_inlet_1[0.0].flow_vol",
+            "value": [
+                1.8022343898640753e-05
+            ],
+            "unit": "m**3/s",
+            "unknown_units": false
+        },
+        {
+            "id": 1718,
+            "name": "fs.Machine Learning 1_141.properties_inlet_1[0.0].entr_mass",
+            "value": [
+                165.85196347063365
+            ],
+            "unit": "J/K/kg",
+            "unknown_units": false
+        },
+        {
+            "id": 1717,
+            "name": "fs.Machine Learning 1_141.properties_inlet_1[0.0].entr_mol",
+            "value": [
+                2.987867570249676
+            ],
+            "unit": "J/K/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 1719,
+            "name": "fs.Machine Learning 1_141.properties_inlet_1[0.0].total_energy_flow",
+            "value": [
+                834.2596379666207
+            ],
+            "unit": "J/s",
+            "unknown_units": false
+        },
+        {
+            "id": 1722,
+            "name": "fs.Machine Learning 1_141.properties_outlet_1[0.0].flow_mol",
+            "value": [
+                1.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 1724,
+            "name": "fs.Machine Learning 1_141.properties_outlet_1[0.0].pressure",
+            "value": [
+                11032305.827500999
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 1727,
+            "name": "fs.Machine Learning 1_141.properties_outlet_1[0.0].enth_mass",
+            "value": [
+                0.6117803593626657
+            ],
+            "unit": "J/kg",
+            "unknown_units": false
+        },
+        {
+            "id": 1726,
+            "name": "fs.Machine Learning 1_141.properties_outlet_1[0.0].enth_mol",
+            "value": [
+                0.011021387131054734
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 1738,
+            "name": "fs.Machine Learning 1_141.properties_outlet_1[0.0].mole_frac_comp[water]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 1723,
+            "name": "fs.Machine Learning 1_141.properties_outlet_1[0.0].temperature",
+            "value": [
+                270.4877113042918
+            ],
+            "unit": "K",
+            "unknown_units": false
+        },
+        {
+            "id": 1725,
+            "name": "fs.Machine Learning 1_141.properties_outlet_1[0.0].vapor_frac",
+            "value": [
+                0.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 1721,
+            "name": "fs.Machine Learning 1_141.properties_outlet_1[0.0].flow_mass",
+            "value": [
+                0.018015268
+            ],
+            "unit": "kg/s",
+            "unknown_units": false
+        },
+        {
+            "id": 1731,
+            "name": "fs.Machine Learning 1_141.properties_outlet_1[0.0].flow_vol",
+            "value": [
+                1.7922049765489637e-05
+            ],
+            "unit": "m**3/s",
+            "unknown_units": false
+        },
+        {
+            "id": 1729,
+            "name": "fs.Machine Learning 1_141.properties_outlet_1[0.0].entr_mass",
+            "value": [
+                -40.482768043583185
+            ],
+            "unit": "J/K/kg",
+            "unknown_units": false
+        },
+        {
+            "id": 1728,
+            "name": "fs.Machine Learning 1_141.properties_outlet_1[0.0].entr_mol",
+            "value": [
+                -0.7293079156869869
+            ],
+            "unit": "J/K/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 1730,
+            "name": "fs.Machine Learning 1_141.properties_outlet_1[0.0].total_energy_flow",
+            "value": [
+                0.011021387131054734
+            ],
+            "unit": "J/s",
+            "unknown_units": false
+        }
+    ]
+}

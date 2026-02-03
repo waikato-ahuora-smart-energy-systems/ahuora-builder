@@ -1,0 +1,1192 @@
+{
+    "id": 1,
+    "name": "",
+    "description": "",
+    "dynamic": false,
+    "is_rating_mode": false,
+    "time_set": [
+        0.0
+    ],
+    "property_packages": [
+        {
+            "id": 0,
+            "type": "helmholtz",
+            "compounds": [
+                "water"
+            ],
+            "phases": [
+                "Liq",
+                "Vap"
+            ]
+        }
+    ],
+    "unit_models": [
+        {
+            "id": 2,
+            "type": "header",
+            "name": "Header1",
+            "args": {
+                "property_package": 0,
+                "num_inlets": 1,
+                "num_outlets": 2
+            },
+            "properties": {
+                "split_flow": {
+                    "data": [
+                        {
+                            "id": 18,
+                            "discrete_indexes": [
+                                "outlet_1"
+                            ],
+                            "value": [
+                                0.1
+                            ],
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        },
+                        {
+                            "id": 19,
+                            "discrete_indexes": [
+                                "outlet_2"
+                            ],
+                            "value": [
+                                0.3
+                            ],
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": "mol/s"
+                },
+                "splitter.vent.flow_mol": {
+                    "data": [
+                        {
+                            "id": 20,
+                            "discrete_indexes": [],
+                            "value": null,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": ""
+                },
+                "heat_duty_inverted": {
+                    "data": [
+                        {
+                            "id": 21,
+                            "discrete_indexes": [],
+                            "value": [
+                                0.0
+                            ],
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": "kW"
+                },
+                "deltaP_inverted": {
+                    "data": [
+                        {
+                            "id": 22,
+                            "discrete_indexes": [],
+                            "value": [
+                                0.0
+                            ],
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": "kPa"
+                },
+                "total_flow_mass": {
+                    "data": [
+                        {
+                            "id": 23,
+                            "discrete_indexes": [],
+                            "value": null,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": ""
+                },
+                "total_flow_mol": {
+                    "data": [
+                        {
+                            "id": 24,
+                            "discrete_indexes": [],
+                            "value": null,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": ""
+                },
+                "balance_flow_mol": {
+                    "data": [
+                        {
+                            "id": 25,
+                            "discrete_indexes": [],
+                            "value": null,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": ""
+                },
+                "temperature": {
+                    "data": [
+                        {
+                            "id": 26,
+                            "discrete_indexes": [],
+                            "value": null,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": ""
+                },
+                "degree_of_superheat": {
+                    "data": [
+                        {
+                            "id": 27,
+                            "discrete_indexes": [],
+                            "value": null,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": ""
+                },
+                "pressure": {
+                    "data": [
+                        {
+                            "id": 28,
+                            "discrete_indexes": [],
+                            "value": null,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": ""
+                },
+                "vapor_frac": {
+                    "data": [
+                        {
+                            "id": 29,
+                            "discrete_indexes": [],
+                            "value": null,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": ""
+                },
+                "enth_mass": {
+                    "data": [
+                        {
+                            "id": 30,
+                            "discrete_indexes": [],
+                            "value": null,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": ""
+                },
+                "enth_mol": {
+                    "data": [
+                        {
+                            "id": 31,
+                            "discrete_indexes": [],
+                            "value": null,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": ""
+                }
+            },
+            "ports": {
+                "mixer.inlet_1": {
+                    "id": 3,
+                    "properties": {
+                        "flow_mol": {
+                            "data": [
+                                {
+                                    "id": 55,
+                                    "discrete_indexes": [],
+                                    "value": [
+                                        1.0
+                                    ],
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "mol/s"
+                        },
+                        "pressure": {
+                            "data": [
+                                {
+                                    "id": 57,
+                                    "discrete_indexes": [],
+                                    "value": [
+                                        100.0
+                                    ],
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "kPa"
+                        },
+                        "enth_mass": {
+                            "data": [
+                                {
+                                    "id": 60,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "enth_mol": {
+                            "data": [
+                                {
+                                    "id": 59,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "mole_frac_comp": {
+                            "data": [
+                                {
+                                    "id": 93,
+                                    "discrete_indexes": [
+                                        "water"
+                                    ],
+                                    "value": [
+                                        1.0
+                                    ],
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "dimensionless"
+                        },
+                        "mole_frac_phase_comp": {
+                            "data": [
+                                {
+                                    "id": 94,
+                                    "discrete_indexes": [
+                                        "Liq",
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                },
+                                {
+                                    "id": 95,
+                                    "discrete_indexes": [
+                                        "Vap",
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "temperature": {
+                            "data": [
+                                {
+                                    "id": 56,
+                                    "discrete_indexes": [],
+                                    "value": [
+                                        200.00000000000006
+                                    ],
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "degC"
+                        },
+                        "vapor_frac": {
+                            "data": [
+                                {
+                                    "id": 58,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "flow_mass": {
+                            "data": [
+                                {
+                                    "id": 54,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "flow_vol": {
+                            "data": [
+                                {
+                                    "id": 64,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "entr_mass": {
+                            "data": [
+                                {
+                                    "id": 62,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "entr_mol": {
+                            "data": [
+                                {
+                                    "id": 61,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "total_energy_flow": {
+                            "data": [
+                                {
+                                    "id": 63,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        }
+                    }
+                },
+                "splitter.outlet_1": {
+                    "id": 4,
+                    "properties": {
+                        "flow_mol": {
+                            "data": [
+                                {
+                                    "id": 66,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "pressure": {
+                            "data": [
+                                {
+                                    "id": 68,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "enth_mass": {
+                            "data": [
+                                {
+                                    "id": 71,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "enth_mol": {
+                            "data": [
+                                {
+                                    "id": 70,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "mole_frac_comp": {
+                            "data": [
+                                {
+                                    "id": 96,
+                                    "discrete_indexes": [
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "mole_frac_phase_comp": {
+                            "data": [
+                                {
+                                    "id": 97,
+                                    "discrete_indexes": [
+                                        "Liq",
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                },
+                                {
+                                    "id": 98,
+                                    "discrete_indexes": [
+                                        "Vap",
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "temperature": {
+                            "data": [
+                                {
+                                    "id": 67,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "vapor_frac": {
+                            "data": [
+                                {
+                                    "id": 69,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "flow_mass": {
+                            "data": [
+                                {
+                                    "id": 65,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "flow_vol": {
+                            "data": [
+                                {
+                                    "id": 75,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "entr_mass": {
+                            "data": [
+                                {
+                                    "id": 73,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "entr_mol": {
+                            "data": [
+                                {
+                                    "id": 72,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "total_energy_flow": {
+                            "data": [
+                                {
+                                    "id": 74,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        }
+                    }
+                },
+                "splitter.outlet_2": {
+                    "id": 5,
+                    "properties": {
+                        "flow_mol": {
+                            "data": [
+                                {
+                                    "id": 77,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "pressure": {
+                            "data": [
+                                {
+                                    "id": 79,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "enth_mass": {
+                            "data": [
+                                {
+                                    "id": 82,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "enth_mol": {
+                            "data": [
+                                {
+                                    "id": 81,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "mole_frac_comp": {
+                            "data": [
+                                {
+                                    "id": 99,
+                                    "discrete_indexes": [
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "mole_frac_phase_comp": {
+                            "data": [
+                                {
+                                    "id": 100,
+                                    "discrete_indexes": [
+                                        "Liq",
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                },
+                                {
+                                    "id": 101,
+                                    "discrete_indexes": [
+                                        "Vap",
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "temperature": {
+                            "data": [
+                                {
+                                    "id": 78,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "vapor_frac": {
+                            "data": [
+                                {
+                                    "id": 80,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "flow_mass": {
+                            "data": [
+                                {
+                                    "id": 76,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "flow_vol": {
+                            "data": [
+                                {
+                                    "id": 86,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "entr_mass": {
+                            "data": [
+                                {
+                                    "id": 84,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "entr_mol": {
+                            "data": [
+                                {
+                                    "id": 83,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "total_energy_flow": {
+                            "data": [
+                                {
+                                    "id": 85,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        }
+                    }
+                },
+                "splitter.vent": {
+                    "id": 2,
+                    "properties": {
+                        "flow_mol": {
+                            "data": [
+                                {
+                                    "id": 44,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "pressure": {
+                            "data": [
+                                {
+                                    "id": 46,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "enth_mass": {
+                            "data": [
+                                {
+                                    "id": 49,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "enth_mol": {
+                            "data": [
+                                {
+                                    "id": 48,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "mole_frac_comp": {
+                            "data": [
+                                {
+                                    "id": 90,
+                                    "discrete_indexes": [
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "mole_frac_phase_comp": {
+                            "data": [
+                                {
+                                    "id": 91,
+                                    "discrete_indexes": [
+                                        "Liq",
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                },
+                                {
+                                    "id": 92,
+                                    "discrete_indexes": [
+                                        "Vap",
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "temperature": {
+                            "data": [
+                                {
+                                    "id": 45,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "vapor_frac": {
+                            "data": [
+                                {
+                                    "id": 47,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "flow_mass": {
+                            "data": [
+                                {
+                                    "id": 43,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "flow_vol": {
+                            "data": [
+                                {
+                                    "id": 53,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "entr_mass": {
+                            "data": [
+                                {
+                                    "id": 51,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "entr_mol": {
+                            "data": [
+                                {
+                                    "id": 50,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "total_energy_flow": {
+                            "data": [
+                                {
+                                    "id": 52,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        }
+                    }
+                },
+                "phase_separator.condensate_outlet": {
+                    "id": 1,
+                    "properties": {
+                        "flow_mol": {
+                            "data": [
+                                {
+                                    "id": 33,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "pressure": {
+                            "data": [
+                                {
+                                    "id": 35,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "enth_mass": {
+                            "data": [
+                                {
+                                    "id": 38,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "enth_mol": {
+                            "data": [
+                                {
+                                    "id": 37,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "mole_frac_comp": {
+                            "data": [
+                                {
+                                    "id": 87,
+                                    "discrete_indexes": [
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "mole_frac_phase_comp": {
+                            "data": [
+                                {
+                                    "id": 88,
+                                    "discrete_indexes": [
+                                        "Liq",
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                },
+                                {
+                                    "id": 89,
+                                    "discrete_indexes": [
+                                        "Vap",
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "temperature": {
+                            "data": [
+                                {
+                                    "id": 34,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "vapor_frac": {
+                            "data": [
+                                {
+                                    "id": 36,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "flow_mass": {
+                            "data": [
+                                {
+                                    "id": 32,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "flow_vol": {
+                            "data": [
+                                {
+                                    "id": 42,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "entr_mass": {
+                            "data": [
+                                {
+                                    "id": 40,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "entr_mol": {
+                            "data": [
+                                {
+                                    "id": 39,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "total_energy_flow": {
+                            "data": [
+                                {
+                                    "id": 41,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "arcs": [],
+    "machineLearningBlock": null,
+    "expressions": [],
+    "optimizations": [],
+    "disable_initialization": false,
+    "solver_option": "ipopt"
+}

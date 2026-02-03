@@ -1,0 +1,29 @@
+{
+  "id": 0,
+  "name": "sb_vapor_frac_test",
+  "description": "state block with T and x - expect atmopsheric pressure",
+  "property_package": {
+    "id": 3,
+    "type": "helmholtz",
+    "compounds": ["h2o"],
+    "phases": ["Liq", "Vap"]
+  },
+  "properties": {
+    "temperature": { "data": [{ "id": 1, "value": 373.15 }], "unit": "K" },
+    "flow_mol": { "data": [{ "id": 2, "value": 1 }], "unit": "mol/s" },
+    "vapor_frac": {
+      "data": [{ "id": 3, "value": 0 }],
+      "unit": "dimensionless"
+    },
+    "mole_frac_comp": {
+      "data": [
+        {
+          "discrete_indexes": ["h2o"],
+          "id": 4,
+          "value": 1.0
+        }
+      ],
+      "unit": "dimensionless"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+    "id": 0,
+    "properties": [
+        {
+            "id": 1,
+            "name": "fs.Compressor1_3.control_volume.deltaP[0.0]",
+            "value": [
+                50000.0
+            ],
+            "unit": "kg/m/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 2,
+            "name": "fs.Compressor1_3.efficiency_isentropic[0.0]",
+            "value": [
+                0.10000000348739019
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 3,
+            "name": "fs.Compressor1_3.control_volume.properties_in[0.0].pressure",
+            "value": [
+                100000.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 4,
+            "name": "fs.Compressor1_3.control_volume.properties_in[0.0].temperature",
+            "value": [
+                299.51385967408487
+            ],
+            "unit": "K",
+            "unknown_units": false
+        },
+        {
+            "id": 5,
+            "name": "fs.Compressor1_3.control_volume.properties_in[0.0].flow_mol",
+            "value": [
+                1.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 6,
+            "name": "fs.'Expression to optimize. We unfix both variables and expressions here to test both._6'",
+            "value": [
+                0.48999999930252197
+            ],
+            "unit": "dimensionless",
+            "unknown_units": true
+        }
+    ]
+}

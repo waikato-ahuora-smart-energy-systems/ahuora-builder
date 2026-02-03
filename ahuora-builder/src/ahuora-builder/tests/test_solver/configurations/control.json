@@ -1,0 +1,39 @@
+{
+    "id": 0,
+    "name": "control_test",
+    "description": "inlet enthalpy is controlled by the set point of the outlet enthalpy",
+    "dynamic": false,
+    "property_packages": [],
+    "unit_models": [
+        {
+            "id": 3,
+            "name": "Compressor-1",
+            "type": "compressor",
+            "args": {
+                "property_package": -1
+            },
+            "properties": {
+                "deltaP": { "data": [ { "id": 1, "value": [50000] } ], "unit": "Pa" },
+                "efficiency_isentropic": { "data": [ { "id": 2, "value": 0.9 } ], "unit": null }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 1,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 3, "value": [101325] } ], "unit": "Pa" },
+                        "enth_mol": { "data": [ { "id": 4, "value": [4000], "guess": true } ], "unit": "J/mol" },
+                        "flow_mol": { "data": [ { "id": 5, "value": [100],"guess":true } ], "unit": "mol/s" }
+                    }
+                },
+                "outlet": {
+                    "id": 2,
+                    "properties": {
+                        "enth_mol": { "data": [ { "id": 6, "value": [6000], "controlled": 4 } ], "unit": "J/mol" },
+                        "flow_mol": { "data": [ { "id": 7, "value": [100],"controlled": 5 } ], "unit": "mol/s" }
+                    }
+                }
+            }
+        }
+    ],
+    "arcs": []
+}

@@ -1,0 +1,59 @@
+{
+    "id": 0,
+    "properties": [
+        {
+            "id": 1,
+            "name": "fs.Pump-1_8.efficiency_pump[0.0]",
+            "value": [
+                0.8
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 2,
+            "name": "fs.Pump-1_8.control_volume.properties_in[0.0].pressure",
+            "value": [
+                11000000.0001255
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 3,
+            "name": "fs.Pump-1_8.control_volume.properties_in[0.0].enth_mol",
+            "value": [
+                124.99992879999999
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 4,
+            "name": "fs.Pump-1_8.control_volume.properties_in[0.0].flow_mol",
+            "value": [
+                431.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 5,
+            "name": "fs.Pump-1_8.control_volume.properties_out[0.0].pressure",
+            "value": [
+                22000000.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 6,
+            "name": "fs.Heater-1_9.control_volume.heat[0.0]",
+            "value": [
+                100.0
+            ],
+            "unit": "kg*m**2/s**3",
+            "unknown_units": false
+        }
+    ]
+}

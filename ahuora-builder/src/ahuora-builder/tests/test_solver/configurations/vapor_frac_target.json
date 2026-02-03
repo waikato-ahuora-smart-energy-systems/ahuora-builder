@@ -1,0 +1,67 @@
+{
+    "id": 0,
+    "name": "vapor_frac_target",
+    "description": "compressor_test_with_vapor_fraction - targets an outlet vapor fraction of 1",
+    "dynamic": false,
+    "property_packages": [],
+    "unit_models": [
+        {
+            "id": 3,
+            "type": "compressor",
+            "name": "Compressor-1",
+            "args": {
+                "property_package": -1
+            },
+            "properties": {
+                "efficiency_isentropic": { "data": [ { "id": 1, "value": 0.9 } ], "unit": null }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 1,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 2, "value": 100325 } ], "unit": "Pa" },
+                        "enth_mol": { "data": [ { "id": 3, "value": 4000 } ], "unit": "J/mol" },
+                        "flow_mol": { "data": [ { "id": 4, "value": 1 } ], "unit": "mol/s" }
+                    }
+                },
+                "outlet": {
+                    "id": 2,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 5, "value": 101325 } ], "unit": "Pa" }
+                    }
+                }
+            }
+        },
+        {
+            "id": 4,
+            "type": "heater",
+            "name": "Heater-1",
+            "args": {
+                "property_package": -1,
+                "has_pressure_change": true
+            },
+            "properties": {
+                "deltaP": { "data": [ { "id": 6, "value": 0 } ], "unit": "Pa" }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 3,
+                    "properties": {}
+                },
+                "outlet": {
+                    "id": 4,
+                    "properties": {
+                        "vapor_frac": { "data": [ { "id": 7, "value": 1 } ], "unit": "dimensionless" }
+                    }
+                }
+            }
+        }
+    ],
+    "arcs": [
+        {
+            "id": 1,
+            "source": 2,
+            "destination": 3
+        }
+    ]
+}

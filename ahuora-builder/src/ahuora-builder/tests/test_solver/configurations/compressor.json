@@ -1,0 +1,38 @@
+{
+    "id": 0,
+    "name": "compressor_test",
+    "dynamic": false,
+    "property_packages": [],
+    "unit_models": [
+        {
+            "id": 3,
+            "type": "compressor",
+            "name": "Compressor-1",
+            "args": {
+                "property_package": -1,
+                "power_property_package": "m.fs.PoP"
+            },
+            "properties": {
+                "deltaP": { "data": [ { "id": 1, "value": 50000 } ], "unit": "Pa" },
+                "efficiency_isentropic": { "data": [ { "id": 2, "value": 0.9 } ], "unit": null }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 1,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 3, "value": 101325 } ], "unit": "Pa" },
+                        "enth_mol": { "data": [ { "id": 4, "value": 4000 } ], "unit": "J/mol" },
+                        "flow_mol": { "data": [ { "id": 5, "value": 100 } ], "unit": "mol/s" },
+                        "mole_frac_comp": { "data": [ { "discrete_indexes":["h2o"], "id": 6, "value": 1 }  ], "unit": null },
+                        "temperature": { "data": [ { "id": 7 } ] }
+                    }
+                },
+                "outlet": {
+                    "id": 2,
+                    "properties": {}
+                }
+            }
+        }
+    ],
+    "arcs": []
+}

@@ -1,0 +1,521 @@
+{
+  "id": 6,
+  "name": "",
+  "description": "",
+  "dynamic": false,
+  "is_rating_mode": false,
+  "time_set": [
+    0
+  ],
+  "property_packages": [
+    {
+      "id": 0,
+      "type": "milk",
+      "compounds": [
+        "milk_solid",
+        "water"
+      ],
+      "phases": [
+        "Liq",
+        "Vap"
+      ]
+    }
+  ],
+  "unit_models": [
+    {
+      "id": 81,
+      "type": "heater",
+      "name": "Heater 1",
+      "args": {
+        "property_package": 0,
+        "has_pressure_change": true,
+        "dynamic": false,
+        "has_holdup": false
+      },
+      "properties": {
+        "heat_duty": {
+          "data": [
+            {
+              "id": 907,
+              "value": 1,
+              "controlled": null,
+              "guess": false,
+              "constraint": null
+            }
+          ],
+          "unit": "kW",
+          "transformers": []
+        },
+        "deltaP": {
+          "data": [
+            {
+              "id": 908,
+              "value": 0,
+              "controlled": null,
+              "guess": false,
+              "constraint": null
+            }
+          ],
+          "unit": "kPa",
+          "transformers": [
+            "inverse"
+          ]
+        }
+      },
+      "ports": {
+        "inlet": {
+          "id": 52,
+          "properties": {
+            "flow_mol": {
+              "data": [
+                {
+                  "id": 918,
+                  "value": 1,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "mol/s",
+              "transformers": []
+            },
+            "pressure": {
+              "data": [
+                {
+                  "id": 920,
+                  "value": 100,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "kPa",
+              "transformers": []
+            },
+            "enth_mass": {
+              "data": [
+                {
+                  "id": 923,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "enth_mol": {
+              "data": [
+                {
+                  "id": 922,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "mole_frac_comp": {
+              "data": [
+                {
+                  "discrete_indexes": [
+                    "milk_solid"
+                  ],
+                  "id": 943,
+                  "value": 0.5,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                },
+                {
+                  "discrete_indexes": [
+                    "water"
+                  ],
+                  "id": 953,
+                  "value": 0.5,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "dimensionless",
+              "transformers": []
+            },
+            "mole_frac_phase_comp": {
+              "data": [
+                {
+                  "discrete_indexes": [
+                    "Liq",
+                    "milk_solid"
+                  ],
+                  "id": 944,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                },
+                {
+                  "discrete_indexes": [
+                    "Liq",
+                    "water"
+                  ],
+                  "id": 954,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                },
+                {
+                  "discrete_indexes": [
+                    "Vap",
+                    "milk_solid"
+                  ],
+                  "id": 945,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                },
+                {
+                  "discrete_indexes": [
+                    "Vap",
+                    "water"
+                  ],
+                  "id": 955,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "temperature": {
+              "data": [
+                {
+                  "id": 919,
+                  "value": 10,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "degC",
+              "transformers": []
+            },
+            "vapor_frac": {
+              "data": [
+                {
+                  "id": 921,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "flow_mass": {
+              "data": [
+                {
+                  "id": 917,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "flow_vol": {
+              "data": [
+                {
+                  "id": 927,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "entr_mass": {
+              "data": [
+                {
+                  "id": 925,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "entr_mol": {
+              "data": [
+                {
+                  "id": 924,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "total_energy_flow": {
+              "data": [
+                {
+                  "id": 926,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            }
+          }
+        },
+        "outlet": {
+          "id": 53,
+          "properties": {
+            "flow_mol": {
+              "data": [
+                {
+                  "id": 929,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "pressure": {
+              "data": [
+                {
+                  "id": 931,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "enth_mass": {
+              "data": [
+                {
+                  "id": 934,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "enth_mol": {
+              "data": [
+                {
+                  "id": 933,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "mole_frac_comp": {
+              "data": [
+                {
+                  "discrete_indexes": [
+                    "milk_solid"
+                  ],
+                  "id": 946,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                },
+                {
+                  "discrete_indexes": [
+                    "water"
+                  ],
+                  "id": 956,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "mole_frac_phase_comp": {
+              "data": [
+                {
+                  "discrete_indexes": [
+                    "Liq",
+                    "milk_solid"
+                  ],
+                  "id": 947,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                },
+                {
+                  "discrete_indexes": [
+                    "Liq",
+                    "water"
+                  ],
+                  "id": 957,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                },
+                {
+                  "discrete_indexes": [
+                    "Vap",
+                    "milk_solid"
+                  ],
+                  "id": 948,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                },
+                {
+                  "discrete_indexes": [
+                    "Vap",
+                    "water"
+                  ],
+                  "id": 958,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "temperature": {
+              "data": [
+                {
+                  "id": 930,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "vapor_frac": {
+              "data": [
+                {
+                  "id": 932,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "flow_mass": {
+              "data": [
+                {
+                  "id": 928,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "flow_vol": {
+              "data": [
+                {
+                  "id": 938,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "entr_mass": {
+              "data": [
+                {
+                  "id": 936,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "entr_mol": {
+              "data": [
+                {
+                  "id": 935,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            },
+            "total_energy_flow": {
+              "data": [
+                {
+                  "id": 937,
+                  "value": null,
+                  "controlled": null,
+                  "guess": false,
+                  "constraint": null
+                }
+              ],
+              "unit": "",
+              "transformers": []
+            }
+          }
+        }
+      }
+    }
+  ],
+  "arcs": [],
+  "machineLearningBlock": null,
+  "expressions": [],
+  "optimizations": []
+}

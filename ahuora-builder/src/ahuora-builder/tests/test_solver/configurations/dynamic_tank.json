@@ -1,0 +1,733 @@
+{
+    "id": 106,
+    "name": "",
+    "description": "",
+    "dynamic": true,
+    "is_rating_mode": false,
+    "time_set": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0
+    ],
+    "property_packages": [
+        {
+            "id": 0,
+            "type": "helmholtz",
+            "compounds": [
+                "water"
+            ],
+            "phases": [
+                "Liq",
+                "Vap"
+            ]
+        }
+    ],
+    "unit_models": [
+        {
+            "id": 672,
+            "type": "Tank",
+            "name": "Tank1",
+            "args": {
+                "dynamic": true,
+                "has_holdup": true,
+                "property_package": 0
+            },
+            "properties": {
+                "control_volume.material_holdup": {
+                    "data": [
+                        {
+                            "id": 6829,
+                            "discrete_indexes": [
+                                "Liq",
+                                "water"
+                            ],
+                            "value": null,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        },
+                        {
+                            "id": 6830,
+                            "discrete_indexes": [
+                                "Vap",
+                                "water"
+                            ],
+                            "value": null,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": "",
+                    "transformers": []
+                },
+                "control_volume.volume": {
+                    "data": [
+                        {
+                            "id": 6803,
+                            "discrete_indexes": [],
+                            "value": null,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": "",
+                    "transformers": []
+                },
+                "deltaP": {
+                    "data": [
+                        {
+                            "id": 6801,
+                            "discrete_indexes": [],
+                            "value": null,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": "",
+                    "transformers": []
+                },
+                "flow_rate_out": {
+                    "data": [
+                        {
+                            "id": 6800,
+                            "discrete_indexes": [],
+                            "value": null,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": "",
+                    "transformers": []
+                },
+                "heat_duty_inverted": {
+                    "data": [
+                        {
+                            "id": 6797,
+                            "discrete_indexes": [],
+                            "value": [
+                                5.0,
+                                5.0,
+                                5.0,
+                                5.0,
+                                5.0,
+                                5.0,
+                                5.0,
+                                5.0,
+                                5.0,
+                                5.0,
+                                5.0,
+                                5.0,
+                                5.0,
+                                5.0,
+                                5.0
+                            ],
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": "kW",
+                    "transformers": [
+                        "inverse"
+                    ]
+                },
+                "initial_level": {
+                    "data": [
+                        {
+                            "id": 6806,
+                            "discrete_indexes": [],
+                            "value": 1.0,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": "m",
+                    "transformers": []
+                },
+                "initial_pressure": {
+                    "data": [
+                        {
+                            "id": 6805,
+                            "discrete_indexes": [],
+                            "value": 100.0,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": "kPa",
+                    "transformers": []
+                },
+                "initial_temperature": {
+                    "data": [
+                        {
+                            "id": 6804,
+                            "discrete_indexes": [],
+                            "value": 20.0,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": "degC",
+                    "transformers": []
+                },
+                "tank_diameter": {
+                    "data": [
+                        {
+                            "id": 6798,
+                            "discrete_indexes": [],
+                            "value": 0.1,
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": "m",
+                    "transformers": []
+                },
+                "tank_level": {
+                    "data": [
+                        {
+                            "id": 6799,
+                            "discrete_indexes": [],
+                            "value": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "controlled": null,
+                            "guess": true,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": "m",
+                    "transformers": []
+                }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 424,
+                    "properties": {
+                        "enth_mass": {
+                            "data": [
+                                {
+                                    "id": 6813,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "enth_mol": {
+                            "data": [
+                                {
+                                    "id": 6812,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "entr_mass": {
+                            "data": [
+                                {
+                                    "id": 6815,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "entr_mol": {
+                            "data": [
+                                {
+                                    "id": 6814,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "flow_mass": {
+                            "data": [
+                                {
+                                    "id": 6807,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "flow_mol": {
+                            "data": [
+                                {
+                                    "id": 6808,
+                                    "discrete_indexes": [],
+                                    "value": [
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0
+                                    ],
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "mol/s",
+                            "transformers": []
+                        },
+                        "flow_vol": {
+                            "data": [
+                                {
+                                    "id": 6817,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "mole_frac_comp": {
+                            "data": [
+                                {
+                                    "id": 6831,
+                                    "discrete_indexes": [
+                                        "water"
+                                    ],
+                                    "value": [
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0,
+                                        1.0
+                                    ],
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "dimensionless",
+                            "transformers": []
+                        },
+                        "mole_frac_phase_comp": {
+                            "data": [
+                                {
+                                    "id": 6832,
+                                    "discrete_indexes": [
+                                        "Liq",
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                },
+                                {
+                                    "id": 6833,
+                                    "discrete_indexes": [
+                                        "Vap",
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "pressure": {
+                            "data": [
+                                {
+                                    "id": 6810,
+                                    "discrete_indexes": [],
+                                    "value": [
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0,
+                                        100.0
+                                    ],
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "kPa",
+                            "transformers": []
+                        },
+                        "temperature": {
+                            "data": [
+                                {
+                                    "id": 6809,
+                                    "discrete_indexes": [],
+                                    "value": [
+                                        10.000000000004377,
+                                        10.000000000004377,
+                                        10.000000000004377,
+                                        10.000000000004377,
+                                        10.000000000004377,
+                                        10.000000000004377,
+                                        10.000000000004377,
+                                        10.000000000004377,
+                                        10.000000000004377,
+                                        10.000000000004377,
+                                        10.000000000004377,
+                                        10.000000000004377,
+                                        10.000000000004377,
+                                        10.000000000004377,
+                                        10.000000000004377
+                                    ],
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "degC",
+                            "transformers": []
+                        },
+                        "total_energy_flow": {
+                            "data": [
+                                {
+                                    "id": 6816,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "vapor_frac": {
+                            "data": [
+                                {
+                                    "id": 6811,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        }
+                    }
+                },
+                "outlet": {
+                    "id": 425,
+                    "properties": {
+                        "enth_mass": {
+                            "data": [
+                                {
+                                    "id": 6824,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "enth_mol": {
+                            "data": [
+                                {
+                                    "id": 6823,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "entr_mass": {
+                            "data": [
+                                {
+                                    "id": 6826,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "entr_mol": {
+                            "data": [
+                                {
+                                    "id": 6825,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "flow_mass": {
+                            "data": [
+                                {
+                                    "id": 6818,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "flow_mol": {
+                            "data": [
+                                {
+                                    "id": 6819,
+                                    "discrete_indexes": [],
+                                    "value": [
+                                        20.0,
+                                        20.0,
+                                        20.0,
+                                        20.0,
+                                        20.0,
+                                        20.0,
+                                        20.0,
+                                        20.0,
+                                        20.0,
+                                        20.0,
+                                        20.0,
+                                        20.0,
+                                        20.0,
+                                        20.0,
+                                        20.0
+                                    ],
+                                    "controlled": 6799,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "mol/s",
+                            "transformers": []
+                        },
+                        "flow_vol": {
+                            "data": [
+                                {
+                                    "id": 6828,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "mole_frac_comp": {
+                            "data": [
+                                {
+                                    "id": 6834,
+                                    "discrete_indexes": [
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "mole_frac_phase_comp": {
+                            "data": [
+                                {
+                                    "id": 6835,
+                                    "discrete_indexes": [
+                                        "Liq",
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                },
+                                {
+                                    "id": 6836,
+                                    "discrete_indexes": [
+                                        "Vap",
+                                        "water"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "pressure": {
+                            "data": [
+                                {
+                                    "id": 6821,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "temperature": {
+                            "data": [
+                                {
+                                    "id": 6820,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "total_energy_flow": {
+                            "data": [
+                                {
+                                    "id": 6827,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        },
+                        "vapor_frac": {
+                            "data": [
+                                {
+                                    "id": 6822,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "",
+                            "transformers": []
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "arcs": [],
+    "machineLearningBlock": null,
+    "expressions": [],
+    "optimizations": [],
+    "disable_initialization": false,
+    "solver_option": "ipopt"
+}

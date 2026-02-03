@@ -1,0 +1,49 @@
+{
+    "id": 0,
+    "name": "test_recycle",
+    "description": "Simple compressor unit connected back onto itself",
+    "dynamic": false,
+    "property_packages": [],
+    "unit_models": [
+        {
+            "id": 8,
+            "type": "compressor",
+            "name": "Compressor-1",
+            "args": {
+                "property_package": -1,
+                "power_property_package": "m.fs.PoP"
+            },
+            "properties": {
+                "efficiency_isentropic": { "data": [ { "id": 1, "value": 1 } ], "unit": "dimensionless" }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 1,
+                    "properties": {
+                        "flow_mol": { "data": [ { "id": 2, "value": 1 } ], "unit": "mol/s" },
+                        "pressure": { "data": [ { "id": 3, "value": 105 } ], "unit": "kPa" },
+                        "enth_mol": { "data": [ { "id": 4, "value": 10.541 } ], "unit": "J/mol" }
+                    }
+                },
+                "outlet": {
+                    "id": 3,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 5, "value": 110 } ], "unit": "kPa" }
+                    }
+                }
+            }
+        }
+    ],
+    "arcs": [
+        {
+            "id": 7,
+            "source": 3,
+            "destination": 1,
+            "tear_guess": {
+                "pressure": false,
+                "enth_mol": true,
+                "flow_mol": true
+            }
+        }
+    ]
+}

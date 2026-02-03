@@ -1,0 +1,68 @@
+{
+    "id": 0,
+    "name": "specification_test",
+    "description": "tests that an expression can be evaluated",
+    "dynamic": false,
+    "property_packages": [],
+    "unit_models": [
+        {
+            "id": 3,
+            "type": "compressor",
+            "name": "Compressor1",
+            "args": {
+                "property_package": -1
+            },
+            "properties": {
+                "deltaP": { "data": [ { "id": 124, "value": 50000 } ], "unit": "Pa" },
+                "efficiency_isentropic": { "data": [ { "id": 125, "value": 0.9 } ], "unit": null }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 1,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 126, "value": 101325 } ], "unit": "Pa" },
+                        "enth_mol": { "data": [ { "id": 127, "value": 4000 } ], "unit": "J/mol" },
+                        "flow_mol": { "data": [ { "id": 128, "value": 100 } ], "unit": "mol/s" }
+                    }
+                },
+                "outlet": {
+                    "id": 2,
+                    "properties": {}
+                }
+            }
+        }
+    ],
+    "arcs": [],
+    "expressions": [
+        {
+            "id": 129,
+            "name": "Spec-1",
+            "expression": "id_130 * 10"
+        },
+        {
+            "id": 130,
+            "name": "Spec-2",
+            "expression": "id_125 * 2"
+        },
+        {
+            "id": 131,
+            "name": "Spec-3",
+            "expression": "id_130 * kg ^ 2"
+        },
+        {
+            "id": 132,
+            "name": "Try unit conversion",
+            "expression": "$ / id_131"
+        },
+        {
+            "id": 133,
+            "name": "Assert that we can use simple functions such as square root",
+            "expression": "sqrt(2)"
+        },
+        {
+            "id": 134,
+            "name": "Assert can add different units (value should be 51100 Pa)",
+            "expression": "id_124 + 100 * Pa + 1 * kPa"
+        }
+    ]
+}

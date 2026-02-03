@@ -1,0 +1,68 @@
+{
+    "id": 0,
+    "properties": [
+        {
+            "id": 1,
+            "name": "fs.Compressor-1_3.control_volume.deltaP[0.0]",
+            "value": [
+                50000.0
+            ],
+            "unit": "kg/m/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 2,
+            "name": "fs.Compressor-1_3.efficiency_isentropic[0.0]",
+            "value": [
+                0.9
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 3,
+            "name": "fs.Compressor-1_3.control_volume.properties_in[0.0].pressure",
+            "value": [
+                101325.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 4,
+            "name": "fs.Compressor-1_3.control_volume.properties_in[0.0].enth_mol",
+            "value": [
+                5998.970433371995
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 5,
+            "name": "fs.Compressor-1_3.control_volume.properties_in[0.0].flow_mol",
+            "value": [
+                100.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 6,
+            "name": "fs.Compressor-1_3.control_volume.properties_out[0.0].enth_mol",
+            "value": [
+                6000.0
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 7,
+            "name": "fs.Compressor-1_3.control_volume.properties_out[0.0].flow_mol",
+            "value": [
+                100.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        }
+    ]
+}

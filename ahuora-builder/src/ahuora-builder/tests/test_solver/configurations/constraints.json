@@ -1,0 +1,44 @@
+{
+    "id": 0,
+    "name": "constraint_test",
+    "description": "tests for a equality constraint using an expression",
+    "dynamic": false,
+    "property_packages": [],
+    "unit_models": [
+        {
+            "id": 3,
+            "type": "compressor",
+            "name": "Compressor1",
+            "args": {
+                "property_package": -1
+            },
+            "properties": {
+                "efficiency_isentropic": { "data": [ { "id": 125, "value": 0.9 } ], "unit": null }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 1,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 126, "value": 101325,"guess": true, "constraint": "sqrt(id_130 ^ 2)"  } ], "unit": "Pa" },
+                        "enth_mol": { "data": [ { "id": 127, "value": 4000 } ], "unit": "J/mol" },
+                        "flow_mol": { "data": [ { "id": 128, "value": 100 } ], "unit": "mol/s" }
+                    }
+                },
+                "outlet": {
+                    "id": 2,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 129, "value": 200, "guess": true, "constraint": "id_130 * 2" } ], "unit": "kPa" }
+                    }
+                }
+            }
+        }
+    ],
+    "arcs": [],
+    "expressions":[
+        {
+            "id": 130,
+            "name": "Expression to check if units are converted properly too.",
+            "expression": "101.325 * kPa"
+        }
+    ]
+}

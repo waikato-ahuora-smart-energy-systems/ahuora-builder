@@ -1,0 +1,59 @@
+{
+    "id": 0,
+    "properties": [
+        {
+            "id": 1,
+            "name": "fs.Heater-1_9.control_volume.heat[0.0]",
+            "value": [
+                200000.0
+            ],
+            "unit": "kg*m**2/s**3",
+            "unknown_units": false
+        },
+        {
+            "id": 2,
+            "name": "fs.Heater-1_9.control_volume.properties_in[0.0].flow_mol",
+            "value": [
+                431.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 3,
+            "name": "fs.Heater-1_9.control_volume.properties_in[0.0].mole_frac_comp[benzene]",
+            "value": [
+                0.8
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 4,
+            "name": "fs.Heater-1_9.control_volume.properties_in[0.0].mole_frac_comp[toluene]",
+            "value": [
+                0.2
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 5,
+            "name": "fs.Heater-1_9.control_volume.properties_in[0.0].pressure",
+            "value": [
+                101325.0
+            ],
+            "unit": "kg/m/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 6,
+            "name": "fs.Heater-1_9.control_volume.properties_in[0.0].temperature",
+            "value": [
+                303.2
+            ],
+            "unit": "K",
+            "unknown_units": false
+        }
+    ]
+}

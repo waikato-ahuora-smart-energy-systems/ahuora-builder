@@ -1,0 +1,99 @@
+{
+    "id": 4,
+    "dynamic": false,
+    "property_packages": [],
+    "unit_models": [
+        {
+            "id": 55,
+            "type": "link",
+            "name": "Link 55",
+            "args": {},
+            "properties": {
+                "efficiency": {
+                    "data": [
+                        {
+                            "id": 468,
+                            "value": [
+                                0.5
+                            ]
+                        }
+                    ],
+                    "unit": "dimensionless"
+                }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 35,
+                    "properties": {
+                        "power": {
+                            "data": [
+                                {
+                                    "id": 467
+                                }
+                            ]
+                        }
+                    }
+                },
+                "outlet": {
+                    "id": 36,
+                    "properties": {
+                        "power": {
+                            "data": [
+                                {
+                                    "id": 470
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": 52,
+            "type": "link",
+            "name": "Link 22",
+            "args": {},
+            "properties": {
+                "efficiency": {
+                    "data": [
+                        {
+                            "id": 465,
+                            "value": 0.5
+                        }
+                    ],
+                    "unit": "dimensionless"
+                }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 33,
+                    "properties": {
+                        "power": {
+                            "data": [
+                                {
+                                    "id": 466,
+                                    "value": [
+                                        1.0
+                                    ]
+                                }
+                            ],
+                            "unit": "kW"
+                        }
+                    }
+                },
+                "outlet": {
+                    "id": 34,
+                    "properties": {}
+                }
+            }
+        }
+    ],
+    "arcs": [
+        {
+            "id": 54,
+            "source": 34,
+            "destination": 35
+        }
+    ],
+    "specification": []
+}

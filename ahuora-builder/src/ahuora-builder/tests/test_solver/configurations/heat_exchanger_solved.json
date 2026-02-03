@@ -1,0 +1,104 @@
+{
+    "id": 0,
+    "properties": [
+        {
+            "id": 1,
+            "name": "fs.heat_exchanger-1_8.overall_heat_transfer_coefficient[0.0]",
+            "value": [
+                100.0
+            ],
+            "unit": "kg/K/s**3",
+            "unknown_units": false
+        },
+        {
+            "id": 2,
+            "name": "fs.heat_exchanger-1_8.area",
+            "value": [
+                1000.0
+            ],
+            "unit": "m**2",
+            "unknown_units": false
+        },
+        {
+            "id": 3,
+            "name": "fs.heat_exchanger-1_8.hot_side.properties_in[0.0].pressure",
+            "value": [
+                101325.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 4,
+            "name": "fs.heat_exchanger-1_8.hot_side.properties_in[0.0].enth_mol",
+            "value": [
+                40000.0
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 5,
+            "name": "fs.heat_exchanger-1_8.hot_side.properties_in[0.0].flow_mol",
+            "value": [
+                100.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 6,
+            "name": "fs.heat_exchanger-1_8.cold_side.properties_in[0.0].pressure",
+            "value": [
+                101325.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 7,
+            "name": "fs.heat_exchanger-1_8.cold_side.properties_in[0.0].enth_mol",
+            "value": [
+                30000.0
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 8,
+            "name": "fs.heat_exchanger-1_8.cold_side.properties_in[0.0].flow_mol",
+            "value": [
+                100.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 9,
+            "name": "fs.heat_exchanger-1_8.hot_side.properties_out[0.0].temperature",
+            "value": [
+                373.19193487116956
+            ],
+            "unit": "K",
+            "unknown_units": false
+        },
+        {
+            "id": 10,
+            "name": "fs.heat_exchanger-1_8.cold_side.properties_out[0.0].temperature",
+            "value": [
+                373.1819349758752
+            ],
+            "unit": "K",
+            "unknown_units": false
+        },
+        {
+            "id": 129,
+            "name": "fs.'Test Expressions works with heat exchanger area (not indexed by time)_129'",
+            "value": [
+                10000.0
+            ],
+            "unit": "m**2",
+            "unknown_units": true
+        }
+    ]
+}

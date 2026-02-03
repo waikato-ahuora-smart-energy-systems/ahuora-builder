@@ -1,0 +1,50 @@
+{
+    "id": 2,
+    "properties": [
+        {
+            "id": 266,
+            "name": "fs.solar 25_25.efficiency",
+            "value": [
+                0.9500000000000001
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 268,
+            "name": "fs.solar 25_25.area",
+            "value": [
+                5.0
+            ],
+            "unit": "m**2",
+            "unknown_units": false
+        },
+        {
+            "id": 267,
+            "name": "fs.solar 25_25.irradiation[0.0]",
+            "value": [
+                200000.0
+            ],
+            "unit": "W/m**2",
+            "unknown_units": false
+        },
+        {
+            "id": 269,
+            "name": "fs.solar 25_25.panel_count",
+            "value": [
+                2.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 270,
+            "name": "fs.solar 25_25.properties_out[0.0].power",
+            "value": [
+                1900000.0
+            ],
+            "unit": "W",
+            "unknown_units": false
+        }
+    ]
+}

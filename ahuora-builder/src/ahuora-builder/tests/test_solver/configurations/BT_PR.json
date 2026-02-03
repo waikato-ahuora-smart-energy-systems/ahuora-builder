@@ -1,0 +1,59 @@
+{
+    "id": 0,
+    "name": "BT_PR test",
+    "description": "Peng-Robinson test with Benzene and Toluene",
+    "dynamic": false,
+    "property_packages": [
+        {
+            "id": 1,
+            "compounds":["benzene", "toluene"],
+            "type":"peng-robinson",
+            "phases":["Vap", "Liq"]
+        }
+    ],
+    "unit_models": [
+        {
+            "id": 9,
+            "type": "heater",
+            "name": "Heater-1",
+            "args": {
+                "property_package": 1
+            },
+            "properties": {
+                "heat_duty": { "data": [  { "id": 1, "value": 200000 } ], "unit": "W" }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 1,
+                    "properties": {
+                        "flow_mol": { "data": [  { "id": 2, "value": 431 } ], "unit": "mol/s" },
+                        "mole_frac_comp": {
+                            "data": [ 
+                                 {
+                                    "discrete_indexes":["benzene"],
+                                        "id": 3,
+                                        "value": 0.8
+                                    },
+                                     {
+                                        "discrete_indexes":["toluene"],
+                                        "id": 4,
+                                        "value": 0.2
+                                    }
+                                
+                            ],
+                            "unit": null
+                        },
+                        "pressure": { "data": [  { "id": 5, "value": 101325 } ], "unit": "Pa" },
+                        "temperature": { "data": [  { "id": 6, "value": 303.2 } ], "unit": "K" }
+                    }
+                },
+                "outlet": {
+                    "id": 4,
+                    "properties": {}
+                }
+            }
+        }
+    ],
+    "arcs": [
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "id": 0,
+    "properties": [
+        {
+            "id": 125,
+            "name": "fs.Compressor1_3.efficiency_isentropic[0.0]",
+            "value": [
+                0.9
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 126,
+            "name": "fs.Compressor1_3.control_volume.properties_in[0.0].pressure",
+            "value": [
+                101325.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 127,
+            "name": "fs.Compressor1_3.control_volume.properties_in[0.0].enth_mol",
+            "value": [
+                4000.0
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 128,
+            "name": "fs.Compressor1_3.control_volume.properties_in[0.0].flow_mol",
+            "value": [
+                100.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 129,
+            "name": "fs.Compressor1_3.control_volume.properties_out[0.0].pressure",
+            "value": [
+                202650.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 130,
+            "name": "fs.'Expression to check if units are converted properly too._130'",
+            "value": [
+                101325.0
+            ],
+            "unit": "kg/m/s**2",
+            "unknown_units": true
+        }
+    ]
+}

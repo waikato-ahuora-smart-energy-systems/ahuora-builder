@@ -1,0 +1,64 @@
+{
+    "id": 0,
+    "name": "pump_test",
+    "dynamic": false,
+    "property_packages": [],
+    "unit_models": [
+        {
+            "id": 8,
+            "type": "pump",
+            "name": "Pump-1",
+            "properties": {
+                "efficiency_pump": { "data": [ { "id": 1, "value": 0.8 } ], "unit": "dimensionless" }
+            },
+            "args": {
+                "property_package": -1,
+                "power_property_package": "m.fs.PoP"
+            },
+            "ports": {
+                "inlet": {
+                    "id": 1,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 2, "value": 11000000 } ], "unit": "Pa" },
+                        "enth_mol": { "data": [ { "id": 3, "value": 125 } ], "unit": "J/mol" },
+                        "flow_mol": { "data": [ { "id": 4, "value": 431 } ], "unit": "mol/s" }
+                    }
+                },
+                "outlet": {
+                    "id": 3,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 5, "value": 22000000 } ], "unit": "Pa" }
+                    }
+                }
+            }
+        },
+        {
+            "id": 9,
+            "type": "heater",
+            "name": "Heater-1",
+            "args": {
+                "property_package": -1
+            },
+            "properties": {
+                "heat_duty": { "data": [ { "id": 6, "value": 100 } ], "unit": "J/s" }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 2,
+                    "properties": {}
+                },
+                "outlet": {
+                    "id": 4,
+                    "properties": {}
+                }
+            }
+        }
+    ],
+    "arcs": [
+        {
+            "id": 7,
+            "source": 3,
+            "destination": 2
+        }
+    ]
+}

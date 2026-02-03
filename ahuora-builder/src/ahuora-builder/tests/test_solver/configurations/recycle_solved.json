@@ -1,0 +1,50 @@
+{
+    "id": 0,
+    "properties": [
+        {
+            "id": 1,
+            "name": "fs.Compressor-1_8.efficiency_isentropic[0.0]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 2,
+            "name": "fs.Compressor-1_8.control_volume.properties_in[0.0].flow_mol",
+            "value": [
+                1.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 3,
+            "name": "fs.Compressor-1_8.control_volume.properties_in[0.0].pressure",
+            "value": [
+                110000.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 4,
+            "name": "fs.Compressor-1_8.control_volume.properties_in[0.0].enth_mol",
+            "value": [
+                10.541
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 5,
+            "name": "fs.Compressor-1_8.control_volume.properties_out[0.0].pressure",
+            "value": [
+                110000.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        }
+    ]
+}

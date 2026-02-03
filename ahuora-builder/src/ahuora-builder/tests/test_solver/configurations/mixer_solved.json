@@ -1,0 +1,86 @@
+{
+    "id": 0,
+    "properties": [
+        {
+            "id": 1,
+            "name": "fs.Mixer-1_8.inlet_1_state[0.0].pressure",
+            "value": [
+                100000.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 2,
+            "name": "fs.Mixer-1_8.inlet_1_state[0.0].flow_mol",
+            "value": [
+                10.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 3,
+            "name": "fs.Mixer-1_8.inlet_1_state[0.0].enth_mol",
+            "value": [
+                30.0
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 4,
+            "name": "fs.Mixer-1_8.inlet_2_state[0.0].pressure",
+            "value": [
+                100000.0
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 5,
+            "name": "fs.Mixer-1_8.inlet_2_state[0.0].flow_mol",
+            "value": [
+                20.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 6,
+            "name": "fs.Mixer-1_8.inlet_2_state[0.0].enth_mol",
+            "value": [
+                60.0
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        },
+        {
+            "id": 7,
+            "name": "fs.Mixer-1_8.mixed_state[0.0].pressure",
+            "value": [
+                99999.9995
+            ],
+            "unit": "Pa",
+            "unknown_units": false
+        },
+        {
+            "id": 8,
+            "name": "fs.Mixer-1_8.mixed_state[0.0].flow_mol",
+            "value": [
+                30.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 9,
+            "name": "fs.Mixer-1_8.mixed_state[0.0].enth_mol",
+            "value": [
+                50.00000000057014
+            ],
+            "unit": "J/mol",
+            "unknown_units": false
+        }
+    ]
+}

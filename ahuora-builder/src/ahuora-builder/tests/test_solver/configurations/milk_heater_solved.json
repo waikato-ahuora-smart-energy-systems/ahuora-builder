@@ -1,0 +1,311 @@
+{
+    "id": 6,
+    "properties": [
+        {
+            "id": 907,
+            "name": "fs.Heater 1_81.control_volume.heat[0.0]",
+            "value": [
+                1000.0
+            ],
+            "unit": "kg*m**2/s**3",
+            "unknown_units": false
+        },
+        {
+            "id": 908,
+            "name": "fs.Heater 1_81.control_volume.deltaP[0.0]",
+            "value": [
+                -0.0
+            ],
+            "unit": "kg/m/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 918,
+            "name": "fs.Heater 1_81.control_volume.properties_in[0.0].flow_mol",
+            "value": [
+                1.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 920,
+            "name": "fs.Heater 1_81.control_volume.properties_in[0.0].pressure",
+            "value": [
+                100000.0
+            ],
+            "unit": "kg/m/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 923,
+            "name": "fs.Heater 1_81.control_volume.properties_in[0.0].enth_mass",
+            "value": [
+                3057.6918858953495
+            ],
+            "unit": "m**2/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 922,
+            "name": "fs.Heater 1_81.control_volume.properties_in[0.0].enth_mol",
+            "value": [
+                382.2348770798459
+            ],
+            "unit": "kg*m**2/mol/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 943,
+            "name": "fs.Heater 1_81.control_volume.properties_in[0.0].mole_frac_comp[milk_solid]",
+            "value": [
+                0.5
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 953,
+            "name": "fs.Heater 1_81.control_volume.properties_in[0.0].mole_frac_comp[water]",
+            "value": [
+                0.5
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 944,
+            "name": "fs.Heater 1_81.control_volume.properties_in[0.0].mole_frac_phase_comp[Liq,milk_solid]",
+            "value": [
+                0.5000000034115836
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 954,
+            "name": "fs.Heater 1_81.control_volume.properties_in[0.0].mole_frac_phase_comp[Liq,water]",
+            "value": [
+                0.4999999965884165
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 955,
+            "name": "fs.Heater 1_81.control_volume.properties_in[0.0].mole_frac_phase_comp[Vap,water]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 919,
+            "name": "fs.Heater 1_81.control_volume.properties_in[0.0].temperature",
+            "value": [
+                283.15
+            ],
+            "unit": "K",
+            "unknown_units": false
+        },
+        {
+            "id": 921,
+            "name": "fs.Heater 1_81.control_volume.properties_in[0.0].vapor_frac",
+            "value": [
+                6.8231670002584646e-09
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 917,
+            "name": "fs.Heater 1_81.control_volume.properties_in[0.0].flow_mass",
+            "value": [
+                0.12500765000000003
+            ],
+            "unit": "kg/s",
+            "unknown_units": false
+        },
+        {
+            "id": 927,
+            "name": "fs.Heater 1_81.control_volume.properties_in[0.0].flow_vol",
+            "value": [
+                1.8036011030733355e-05
+            ],
+            "unit": "m**3/s",
+            "unknown_units": false
+        },
+        {
+            "id": 925,
+            "name": "fs.Heater 1_81.control_volume.properties_in[0.0].entr_mass",
+            "value": [
+                10.941738003673342
+            ],
+            "unit": "m**2/K/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 924,
+            "name": "fs.Heater 1_81.control_volume.properties_in[0.0].entr_mol",
+            "value": [
+                1.3678009547548962
+            ],
+            "unit": "kg*m**2/K/mol/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 926,
+            "name": "fs.Heater 1_81.control_volume.properties_in[0.0].total_energy_flow",
+            "value": [
+                382.2348770798459
+            ],
+            "unit": "kg*m**2/s**3",
+            "unknown_units": false
+        },
+        {
+            "id": 929,
+            "name": "fs.Heater 1_81.control_volume.properties_out[0.0].flow_mol",
+            "value": [
+                1.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 931,
+            "name": "fs.Heater 1_81.control_volume.properties_out[0.0].pressure",
+            "value": [
+                100000.0
+            ],
+            "unit": "kg/m/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 934,
+            "name": "fs.Heater 1_81.control_volume.properties_out[0.0].enth_mass",
+            "value": [
+                11057.202315857086
+            ],
+            "unit": "m**2/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 933,
+            "name": "fs.Heater 1_81.control_volume.properties_out[0.0].enth_mol",
+            "value": [
+                1382.2348770798521
+            ],
+            "unit": "kg*m**2/mol/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 946,
+            "name": "fs.Heater 1_81.control_volume.properties_out[0.0].mole_frac_comp[milk_solid]",
+            "value": [
+                0.5
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 956,
+            "name": "fs.Heater 1_81.control_volume.properties_out[0.0].mole_frac_comp[water]",
+            "value": [
+                0.5
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 947,
+            "name": "fs.Heater 1_81.control_volume.properties_out[0.0].mole_frac_phase_comp[Liq,milk_solid]",
+            "value": [
+                0.5000000044653424
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 957,
+            "name": "fs.Heater 1_81.control_volume.properties_out[0.0].mole_frac_phase_comp[Liq,water]",
+            "value": [
+                0.49999999553465746
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 958,
+            "name": "fs.Heater 1_81.control_volume.properties_out[0.0].mole_frac_phase_comp[Vap,water]",
+            "value": [
+                0.9999999999999999
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 930,
+            "name": "fs.Heater 1_81.control_volume.properties_out[0.0].temperature",
+            "value": [
+                309.4379246415793
+            ],
+            "unit": "K",
+            "unknown_units": false
+        },
+        {
+            "id": 932,
+            "name": "fs.Heater 1_81.control_volume.properties_out[0.0].vapor_frac",
+            "value": [
+                8.93068483647511e-09
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 928,
+            "name": "fs.Heater 1_81.control_volume.properties_out[0.0].flow_mass",
+            "value": [
+                0.12500765
+            ],
+            "unit": "kg/s",
+            "unknown_units": false
+        },
+        {
+            "id": 938,
+            "name": "fs.Heater 1_81.control_volume.properties_out[0.0].flow_vol",
+            "value": [
+                1.8160038679207507e-05
+            ],
+            "unit": "m**3/s",
+            "unknown_units": false
+        },
+        {
+            "id": 936,
+            "name": "fs.Heater 1_81.control_volume.properties_out[0.0].entr_mass",
+            "value": [
+                37.958564261059266
+            ],
+            "unit": "m**2/K/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 935,
+            "name": "fs.Heater 1_81.control_volume.properties_out[0.0].entr_mol",
+            "value": [
+                4.745110915649005
+            ],
+            "unit": "kg*m**2/K/mol/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 937,
+            "name": "fs.Heater 1_81.control_volume.properties_out[0.0].total_energy_flow",
+            "value": [
+                1382.2348770798521
+            ],
+            "unit": "kg*m**2/s**3",
+            "unknown_units": false
+        }
+    ]
+}

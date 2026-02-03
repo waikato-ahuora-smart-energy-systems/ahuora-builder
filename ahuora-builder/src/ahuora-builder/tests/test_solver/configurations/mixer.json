@@ -1,0 +1,44 @@
+{
+    "id": 0,
+    "name": "mixer_test",
+    "dynamic": false,
+    "property_packages": [],
+    "unit_models": [
+        {
+            "id": 8,
+            "type": "mixer",
+            "name": "Mixer-1",
+            "args": {
+                "property_package": -1
+            },
+            "properties": {},
+            "ports": {
+                "inlet_1": {
+                    "id": 1,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 1, "value": 100000 } ], "unit": "Pa" },
+                        "flow_mol": { "data": [ { "id": 2, "value": 10 } ], "unit": "mol/s" },
+                        "enth_mol": { "data": [ { "id": 3, "value": 30 } ], "unit": "J/mol" }
+                    }
+                },
+                "inlet_2": {
+                    "id": 2,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 4, "value": 100000 } ], "unit": "Pa" },
+                        "flow_mol": { "data": [ { "id": 5, "value": 20 } ], "unit": "mol/s" },
+                        "enth_mol": { "data": [ { "id": 6, "value": 60 } ], "unit": "J/mol" }
+                    }
+                },
+                "outlet": {
+                    "id": 3,
+                    "properties": {
+                        "pressure": { "data": [ { "id": 7 } ] },
+                        "flow_mol": { "data": [ { "id": 8 } ] },
+                        "enth_mol": { "data": [ { "id": 9 } ] }
+                    }
+                }
+            }
+        }
+    ],
+    "arcs": []
+}
