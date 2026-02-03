@@ -30,7 +30,10 @@ jobs:
       run: uv sync --all-extras --dev
     
     - name: Setup idaes
-      run: uv run idaes get-extensions
+      run: |
+          sudo apt-get update
+          sudo apt-get install liblapack3 liblapack-dev libgfortran5 libgomp1  # shared libraries for ipopt
+          uv run idaes get-extensions
     
     - name: Run tests
       run: uv run pytest
