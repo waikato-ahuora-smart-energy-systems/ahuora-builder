@@ -29,5 +29,8 @@ jobs:
     - name: Install dependencies
       run: uv sync --all-extras --dev
     
+    - name: Setup idaes
+      run: uv run idaes get-extensions
+    
     - name: Run tests
       run: uv run pytest
