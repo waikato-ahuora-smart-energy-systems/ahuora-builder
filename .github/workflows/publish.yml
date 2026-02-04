@@ -1,16 +1,18 @@
 name: "Publish"
-
-on:
+# This workflow will run whenever a pull request to main is merged.
+# It will bump the version number using hatch, commit the change,
+# and publish the package to PyPI.
+on:  
   push:
-    tags:
-      # Publish on any tag starting with a `v`, e.g., v0.1.0
-      - v*
+    branches: ["main"]
+    # This won't run when the version is bumped, because 
+    # github actions doesn't trigger on pushes from other actions by default
 
 jobs:
   run:
     runs-on: ubuntu-latest
     environment:
-      name: pypi
+      name: pypi # Pypi uses trusted environements and is set up to trust the pypi environment.
     permissions:
       id-token: write
       contents: read
@@ -21,6 +23,13 @@ jobs:
         uses: astral-sh/setup-uv@v7
       - name: Install Python 3.14
         run: uv python install 3.14
+      - name: Bump version
+        run: uv run hatch version patch
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          message: "Bump version"
       - name: Build types
         run: uv build --package ahuora-builder-types
       - name: Build package

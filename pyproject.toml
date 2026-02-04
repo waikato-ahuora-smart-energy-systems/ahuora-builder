@@ -1,2 +1,15 @@
 [tool.uv.workspace]
 members = ["ahuora-builder","ahuora-builder-types"]
+
+[dependency-groups]
+dev = [
+    "hatch>=1.16.3",
+]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "__version__.py"
