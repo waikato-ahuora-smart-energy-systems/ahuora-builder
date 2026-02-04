@@ -1,9 +1,17 @@
 [project]
 name = "ahuora-builder-types"
-version = "0.1.0"
-description = "Add your description here"
+dynamic = ["version"] # We don't specify version here, we tell [tool.hatch.version] where to find it (so we can bump types and builder together)
+description = "Types and data models for Ahuora Builder"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
     "pydantic>=2.12.4",
 ]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "../__version__.py"

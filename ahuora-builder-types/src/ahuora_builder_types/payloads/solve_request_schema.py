@@ -1,9 +1,8 @@
 from typing import Optional
 
 from pydantic import BaseModel
-from common.models import CloudEventsPayload
-from common.models.idaes import FlowsheetSchema
-from common.models.idaes.flowsheet_schema import SolvedFlowsheetSchema
+from ahuora_builder_types import FlowsheetSchema
+from ahuora_builder_types.flowsheet_schema import SolvedFlowsheetSchema
 
 
 class IdaesSolveRequestPayload(BaseModel):
@@ -39,7 +38,3 @@ class MultiSolvePayload(BaseModel):
     """
     task_id: int
     scenario_id: int
-
-IdaesSolveEvent = CloudEventsPayload[IdaesSolveRequestPayload]
-IdaesSolveCompletionEvent = CloudEventsPayload[IdaesSolveCompletionPayload]
-DispatchMultiSolveEvent = CloudEventsPayload[MultiSolvePayload]
