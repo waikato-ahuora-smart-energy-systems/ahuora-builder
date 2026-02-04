@@ -10,8 +10,8 @@ members = [
 
 [[package]]
 name = "ahuora-builder"
-version = "0.1.0"
-source = { virtual = "ahuora-builder" }
+version = "0.1.1"
+source = { editable = "ahuora-builder" }
 dependencies = [
     { name = "ahuora-builder-types" },
     { name = "ahuora-compounds" },
@@ -53,7 +53,7 @@ dev = [
 
 [[package]]
 name = "ahuora-builder-types"
-version = "0.1.0"
+version = "0.1.1"
 source = { editable = "ahuora-builder-types" }
 dependencies = [
     { name = "pydantic" },
