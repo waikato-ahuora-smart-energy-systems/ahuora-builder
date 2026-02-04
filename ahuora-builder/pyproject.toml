@@ -1,6 +1,6 @@
 [project]
 name = "ahuora-builder"
-version = "0.1.1"
+version = "0.1.2"
 description = "Load a Ahuora .JSON file into a pyomo model."
 readme = "README.md"
 requires-python = ">=3.14"
