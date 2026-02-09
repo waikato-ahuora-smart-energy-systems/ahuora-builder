@@ -3,7 +3,7 @@ from idaes.core import FlowsheetBlock
 from property_packages.build_package import build_package
 from property_packages.modular.modular_extended import GenericExtendedParameterBlock
 from ahuora_builder_types.flowsheet_schema import PropertyPackageType
-from .custom_property_package_converter import encapsulate_custom_property_package
+from ahuora_builder.custom_property_package_converter import encapsulate_custom_property_package
 from .flowsheet_manager_type import FlowsheetManager
 from ahuora_builder_types import PropertyPackageId
 

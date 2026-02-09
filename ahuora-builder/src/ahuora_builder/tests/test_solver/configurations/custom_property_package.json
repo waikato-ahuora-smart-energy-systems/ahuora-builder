@@ -1,0 +1,599 @@
+{
+    "id": 64,
+    "name": "",
+    "description": "",
+    "dynamic": false,
+    "is_rating_mode": false,
+    "time_set": [
+        0.0
+    ],
+    "property_packages": [
+        {
+            "id": 0,
+            "type": "custom_property_package",
+            "compounds": [
+                "benzene"
+            ],
+            "phases": [
+                "Liq",
+                "Vap"
+            ],
+            "custom": true,
+            "compounds_properties": [
+                {
+                    "compound": {
+                        "id": 17,
+                        "name": "benzene"
+                    },
+                    "properties": [
+                        {
+                            "id": 225,
+                            "propertyName": "mw",
+                            "value": "0.0781136"
+                        },
+                        {
+                            "id": 226,
+                            "propertyName": "pressure_crit",
+                            "value": "4890000"
+                        },
+                        {
+                            "id": 227,
+                            "propertyName": "temperature_crit",
+                            "value": "562.2"
+                        },
+                        {
+                            "id": 228,
+                            "propertyName": "omega",
+                            "value": "0.212"
+                        },
+                        {
+                            "id": 229,
+                            "propertyName": "enth_mol_form_vap_comp_ref",
+                            "value": "82900"
+                        },
+                        {
+                            "id": 230,
+                            "propertyName": "entr_mol_form_vap_comp_ref",
+                            "value": "-269"
+                        },
+                        {
+                            "id": 231,
+                            "propertyName": "cp_mol_ig_comp_coeff.A",
+                            "value": "-33.92"
+                        },
+                        {
+                            "id": 232,
+                            "propertyName": "cp_mol_ig_comp_coeff.B",
+                            "value": "0.4739"
+                        },
+                        {
+                            "id": 233,
+                            "propertyName": "cp_mol_ig_comp_coeff.C",
+                            "value": "0.0003017"
+                        },
+                        {
+                            "id": 234,
+                            "propertyName": "cp_mol_ig_comp_coeff.D",
+                            "value": "0.00000007130"
+                        },
+                        {
+                            "id": 235,
+                            "propertyName": "pressure_sat_comp_coeff.A",
+                            "value": "-6.98273"
+                        },
+                        {
+                            "id": 236,
+                            "propertyName": "pressure_sat_comp_coeff.B",
+                            "value": "1.33213"
+                        },
+                        {
+                            "id": 237,
+                            "propertyName": "pressure_sat_comp_coeff.C",
+                            "value": "-2.62863"
+                        },
+                        {
+                            "id": 238,
+                            "propertyName": "pressure_sat_comp_coeff.D",
+                            "value": "-3.33399"
+                        }
+                    ]
+                }
+            ],
+            "custom_properties": [
+                {
+                    "id": 85,
+                    "propertyName": "compound_id",
+                    "value": [
+                        17
+                    ]
+                },
+                {
+                    "id": 86,
+                    "propertyName": "PR_kappa",
+                    "value": {
+                        "benzene, benzene": "0"
+                    }
+                },
+                {
+                    "id": 87,
+                    "propertyName": "state_bounds.flow_mol",
+                    "value": [
+                        "0",
+                        "10",
+                        "1000"
+                    ]
+                },
+                {
+                    "id": 88,
+                    "propertyName": "state_bounds.temperature",
+                    "value": [
+                        "273.15",
+                        "300",
+                        "500"
+                    ]
+                },
+                {
+                    "id": 89,
+                    "propertyName": "state_bounds.pressure",
+                    "value": [
+                        "50000",
+                        "100000",
+                        "1000000"
+                    ]
+                },
+                {
+                    "id": 90,
+                    "propertyName": "pressure_ref",
+                    "value": "101325"
+                },
+                {
+                    "id": 91,
+                    "propertyName": "temperature_ref",
+                    "value": "298.15"
+                }
+            ]
+        }
+    ],
+    "unit_models": [
+        {
+            "id": 539,
+            "type": "heater",
+            "name": "Heater1",
+            "args": {
+                "property_package": 0,
+                "has_pressure_change": true,
+                "dynamic": false,
+                "has_holdup": false
+            },
+            "properties": {
+                "heat_duty": {
+                    "data": [
+                        {
+                            "id": 6942,
+                            "discrete_indexes": [],
+                            "value": [
+                                0.0
+                            ],
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": "kW"
+                },
+                "deltaP_inverted": {
+                    "data": [
+                        {
+                            "id": 6943,
+                            "discrete_indexes": [],
+                            "value": [
+                                0.0
+                            ],
+                            "controlled": null,
+                            "guess": false,
+                            "constraint": null
+                        }
+                    ],
+                    "unit": "kPa"
+                }
+            },
+            "ports": {
+                "inlet": {
+                    "id": 349,
+                    "properties": {
+                        "flow_mol": {
+                            "data": [
+                                {
+                                    "id": 6957,
+                                    "discrete_indexes": [],
+                                    "value": [
+                                        1.0
+                                    ],
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "mol/s"
+                        },
+                        "pressure": {
+                            "data": [
+                                {
+                                    "id": 6959,
+                                    "discrete_indexes": [],
+                                    "value": [
+                                        100.0
+                                    ],
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "kPa"
+                        },
+                        "enth_mass": {
+                            "data": [
+                                {
+                                    "id": 6962,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "enth_mol": {
+                            "data": [
+                                {
+                                    "id": 6961,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "mole_frac_comp": {
+                            "data": [
+                                {
+                                    "id": 6986,
+                                    "discrete_indexes": [
+                                        "benzene"
+                                    ],
+                                    "value": [
+                                        1.0
+                                    ],
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "dimensionless"
+                        },
+                        "mole_frac_phase_comp": {
+                            "data": [
+                                {
+                                    "id": 6987,
+                                    "discrete_indexes": [
+                                        "Liq",
+                                        "benzene"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                },
+                                {
+                                    "id": 6988,
+                                    "discrete_indexes": [
+                                        "Vap",
+                                        "benzene"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "temperature": {
+                            "data": [
+                                {
+                                    "id": 6958,
+                                    "discrete_indexes": [],
+                                    "value": [
+                                        30.0
+                                    ],
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": "degC"
+                        },
+                        "vapor_frac": {
+                            "data": [
+                                {
+                                    "id": 6960,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "flow_mass": {
+                            "data": [
+                                {
+                                    "id": 6956,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "flow_vol": {
+                            "data": [
+                                {
+                                    "id": 6966,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "entr_mass": {
+                            "data": [
+                                {
+                                    "id": 6964,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "entr_mol": {
+                            "data": [
+                                {
+                                    "id": 6963,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "total_energy_flow": {
+                            "data": [
+                                {
+                                    "id": 6965,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        }
+                    }
+                },
+                "outlet": {
+                    "id": 350,
+                    "properties": {
+                        "flow_mol": {
+                            "data": [
+                                {
+                                    "id": 6968,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "pressure": {
+                            "data": [
+                                {
+                                    "id": 6970,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "enth_mass": {
+                            "data": [
+                                {
+                                    "id": 6973,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "enth_mol": {
+                            "data": [
+                                {
+                                    "id": 6972,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "mole_frac_comp": {
+                            "data": [
+                                {
+                                    "id": 6989,
+                                    "discrete_indexes": [
+                                        "benzene"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "mole_frac_phase_comp": {
+                            "data": [
+                                {
+                                    "id": 6990,
+                                    "discrete_indexes": [
+                                        "Liq",
+                                        "benzene"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                },
+                                {
+                                    "id": 6991,
+                                    "discrete_indexes": [
+                                        "Vap",
+                                        "benzene"
+                                    ],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "temperature": {
+                            "data": [
+                                {
+                                    "id": 6969,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "vapor_frac": {
+                            "data": [
+                                {
+                                    "id": 6971,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "flow_mass": {
+                            "data": [
+                                {
+                                    "id": 6967,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "flow_vol": {
+                            "data": [
+                                {
+                                    "id": 6977,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "entr_mass": {
+                            "data": [
+                                {
+                                    "id": 6975,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "entr_mol": {
+                            "data": [
+                                {
+                                    "id": 6974,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        },
+                        "total_energy_flow": {
+                            "data": [
+                                {
+                                    "id": 6976,
+                                    "discrete_indexes": [],
+                                    "value": null,
+                                    "controlled": null,
+                                    "guess": false,
+                                    "constraint": null
+                                }
+                            ],
+                            "unit": ""
+                        }
+                    }
+                }
+            },
+            "initial_values": null
+        }
+    ],
+    "arcs": [],
+    "machineLearningBlock": null,
+    "expressions": [],
+    "optimizations": [],
+    "disable_initialization": false,
+    "solver_option": "ipopt"
+}
