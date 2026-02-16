@@ -17,10 +17,15 @@ class PropertyComponent:
         self.name: str = name
         self.component: IndexedComponent = component
         self.unknown_units = unknown_units
-        self.corresponding_constraint = None # TODO: Type
+        self.corresponding_constraint : list[ScalarVar | ScalarConstraint] = None # TODO: Type
 
 
 class PropertiesManager:
+    """
+    The properties manager is responsible for keeping track of all the properties in the model that we have fixed.
+    This allows us to unfix/deactivate them as needed, for example when we want to initialise the model.
+    You should be able to access this from model.fs.properties_map, or from the FlowsheetManager.PropertiesManager after the flowsheet is loaded.
+    """
     def __init__(self):
         self.properties : dict[PropertyValueId,PropertyComponent] = {}
 
