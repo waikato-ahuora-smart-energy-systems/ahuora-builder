@@ -1,4 +1,4 @@
-from typing import Optional, Literal
+from typing import Optional, Any
 from pydantic import BaseModel, Field
 from ahuora_builder_types import UnitModelSchema, ArcSchema
 from ahuora_builder_types.unit_model_schema import SolvedPropertyValueSchema
@@ -6,9 +6,13 @@ from ahuora_builder_types.scenario_schema import OptimizationSchema
 
 class PropertyPackageType(BaseModel):
     id: int
-    type: str
-    compounds: list[str]
+    type: Optional[str] = None
+    compounds: Optional[list[str]] = None
     phases: list[str]
+    custom: bool = False
+    compounds_properties: Optional[list[dict[str, Any]]] = None
+    custom_properties: Optional[list[Any]] = None
+
 
 def default_time_set():
     return list([0])

@@ -207,6 +207,9 @@ def test_solve_solar() -> None:
 def test_solve_milk_heater() -> None:
     try_solve('configurations/milk_heater.json', 'configurations/milk_heater_solved.json') 
 
+def test_solve_custom_property_package() -> None:
+    try_solve('configurations/custom_property_package.json', 'configurations/custom_property_package_solved.json') 
+
 def test_solve_dynamic_tank() -> None:
     try_solve('configurations/dynamic_tank.json', 'configurations/dynamic_tank_solved.json') 
 

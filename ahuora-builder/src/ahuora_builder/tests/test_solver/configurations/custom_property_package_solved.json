@@ -1,0 +1,275 @@
+{
+    "id": 64,
+    "properties": [
+        {
+            "id": 6942,
+            "name": "fs.Heater1_539.control_volume.heat[0.0]",
+            "value": [
+                0.0
+            ],
+            "unit": "kg*m**2/s**3",
+            "unknown_units": false
+        },
+        {
+            "id": 6943,
+            "name": "fs.Heater1_539.deltaP_inverted[0.0]",
+            "value": [
+                0.0
+            ],
+            "unit": "kg/m/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 6957,
+            "name": "fs.Heater1_539.control_volume.properties_in[0.0].flow_mol",
+            "value": [
+                1.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 6959,
+            "name": "fs.Heater1_539.control_volume.properties_in[0.0].pressure",
+            "value": [
+                100000.0
+            ],
+            "unit": "kg/m/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 6962,
+            "name": "fs.Heater1_539.control_volume.properties_in[0.0].enth_mass",
+            "value": [
+                655802.7392132176
+            ],
+            "unit": "m**2/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 6961,
+            "name": "fs.Heater1_539.control_volume.properties_in[0.0].enth_mol",
+            "value": [
+                51227.1128498056
+            ],
+            "unit": "kg*m**2/mol/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 6986,
+            "name": "fs.Heater1_539.control_volume.properties_in[0.0].mole_frac_comp[benzene]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 6987,
+            "name": "fs.Heater1_539.control_volume.properties_in[0.0].mole_frac_phase_comp[Liq,benzene]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 6988,
+            "name": "fs.Heater1_539.control_volume.properties_in[0.0].mole_frac_phase_comp[Vap,benzene]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 6958,
+            "name": "fs.Heater1_539.control_volume.properties_in[0.0].temperature",
+            "value": [
+                303.15
+            ],
+            "unit": "K",
+            "unknown_units": false
+        },
+        {
+            "id": 6960,
+            "name": "fs.Heater1_539.control_volume.properties_in[0.0].vapor_frac",
+            "value": [
+                0.005005945347917649
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 6956,
+            "name": "fs.Heater1_539.control_volume.properties_in[0.0].flow_mass",
+            "value": [
+                0.0781136
+            ],
+            "unit": "kg/s",
+            "unknown_units": false
+        },
+        {
+            "id": 6966,
+            "name": "fs.Heater1_539.control_volume.properties_in[0.0].flow_vol",
+            "value": [
+                8.822682354278389e-05
+            ],
+            "unit": "m**3/s",
+            "unknown_units": false
+        },
+        {
+            "id": 6964,
+            "name": "fs.Heater1_539.control_volume.properties_in[0.0].entr_mass",
+            "value": [
+                -4589.263156116767
+            ],
+            "unit": "m**2/K/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 6963,
+            "name": "fs.Heater1_539.control_volume.properties_in[0.0].entr_mol",
+            "value": [
+                -358.4838664716427
+            ],
+            "unit": "kg*m**2/K/mol/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 6965,
+            "name": "fs.Heater1_539.control_volume.properties_in[0.0].total_energy_flow",
+            "value": [
+                51227.1128498056
+            ],
+            "unit": "kg*m**2/s**3",
+            "unknown_units": false
+        },
+        {
+            "id": 6968,
+            "name": "fs.Heater1_539.control_volume.properties_out[0.0].flow_mol",
+            "value": [
+                1.0
+            ],
+            "unit": "mol/s",
+            "unknown_units": false
+        },
+        {
+            "id": 6970,
+            "name": "fs.Heater1_539.control_volume.properties_out[0.0].pressure",
+            "value": [
+                100000.0
+            ],
+            "unit": "kg/m/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 6973,
+            "name": "fs.Heater1_539.control_volume.properties_out[0.0].enth_mass",
+            "value": [
+                655802.7392132093
+            ],
+            "unit": "m**2/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 6972,
+            "name": "fs.Heater1_539.control_volume.properties_out[0.0].enth_mol",
+            "value": [
+                51227.11284980494
+            ],
+            "unit": "kg*m**2/mol/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 6989,
+            "name": "fs.Heater1_539.control_volume.properties_out[0.0].mole_frac_comp[benzene]",
+            "value": [
+                1.0
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 6990,
+            "name": "fs.Heater1_539.control_volume.properties_out[0.0].mole_frac_phase_comp[Liq,benzene]",
+            "value": [
+                0.9999999999999999
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 6991,
+            "name": "fs.Heater1_539.control_volume.properties_out[0.0].mole_frac_phase_comp[Vap,benzene]",
+            "value": [
+                0.9999999999999999
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 6969,
+            "name": "fs.Heater1_539.control_volume.properties_out[0.0].temperature",
+            "value": [
+                303.14999999999844
+            ],
+            "unit": "K",
+            "unknown_units": false
+        },
+        {
+            "id": 6971,
+            "name": "fs.Heater1_539.control_volume.properties_out[0.0].vapor_frac",
+            "value": [
+                0.005005945347919936
+            ],
+            "unit": "dimensionless",
+            "unknown_units": false
+        },
+        {
+            "id": 6967,
+            "name": "fs.Heater1_539.control_volume.properties_out[0.0].flow_mass",
+            "value": [
+                0.07811359999999999
+            ],
+            "unit": "kg/s",
+            "unknown_units": false
+        },
+        {
+            "id": 6977,
+            "name": "fs.Heater1_539.control_volume.properties_out[0.0].flow_vol",
+            "value": [
+                8.822682354278223e-05
+            ],
+            "unit": "m**3/s",
+            "unknown_units": false
+        },
+        {
+            "id": 6975,
+            "name": "fs.Heater1_539.control_volume.properties_out[0.0].entr_mass",
+            "value": [
+                -4589.263156116795
+            ],
+            "unit": "m**2/K/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 6974,
+            "name": "fs.Heater1_539.control_volume.properties_out[0.0].entr_mol",
+            "value": [
+                -358.48386647164483
+            ],
+            "unit": "kg*m**2/K/mol/s**2",
+            "unknown_units": false
+        },
+        {
+            "id": 6976,
+            "name": "fs.Heater1_539.control_volume.properties_out[0.0].total_energy_flow",
+            "value": [
+                51227.11284980494
+            ],
+            "unit": "kg*m**2/s**3",
+            "unknown_units": false
+        }
+    ]
+}
