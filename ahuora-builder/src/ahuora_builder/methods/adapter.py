@@ -197,14 +197,17 @@ def collate_indexes(block: Block, property_key: str) -> IndexedComponent:
 def fix_var(blk: Block, var : ScalarVar | ScalarExpression, value : ValueWithUnits) -> ScalarVar | ScalarConstraint:#
     # returns: the expression that a constraint was added for, or the fixed var
     if hasattr(blk, "constrain_component"):
-        component = blk.constrain_component(var, value)
+        constraint = blk.constrain_component(var, value)
+        return constraint
     elif isinstance(var, ScalarExpression):
-        component = var
+        # This is only used in tests right now I think. Our only expressions are currently in the property packages, and they use the constrain_component method.
+        constraint = ScalarConstraint(expr=var == value)
+        blk.add_component(f"{var.name}_constraint", constraint)
+        return constraint
     else:
         #print(var)
         var.fix(value)
-        component = var
-    return component
+        return var
 
 def fix_slice(var_slice: IndexedComponent | IndexedComponent_slice, values: list[ValueWithUnits]) -> list[ScalarVar | ScalarConstraint]:
     # Fix a slice of a variable to the given values.
