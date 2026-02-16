@@ -115,6 +115,7 @@ class FlowsheetManager:
         self.arcs = ArcManager(self)
         # set certain arcs as tears
         self.tears = TearManager(self)
+        self.properties_map: PropertiesManager
 
     def load(self) -> None:
         """
@@ -142,7 +143,7 @@ class FlowsheetManager:
                 scheme="BACKWARD"
             )
             
-
+        self.properties_map = self.model.fs.properties_map
         self.timing.step_out()
 
     def load_specs(self) -> None:
