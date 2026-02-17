@@ -1,12 +1,10 @@
 from idaes.core.base.property_base import PhysicalParameterBlock
 from idaes.core import FlowsheetBlock
 from property_packages.build_package import build_package
-from property_packages.modular.modular_extended import GenericExtendedParameterBlock
 from ahuora_builder_types.flowsheet_schema import PropertyPackageType
-from ahuora_builder.custom_property_package_converter import encapsulate_custom_property_package
 from .flowsheet_manager_type import FlowsheetManager
 from ahuora_builder_types import PropertyPackageId
-
+from .methods.build_custom_package import build_custom_package
 
 def create_property_package(
     property_package_schema: PropertyPackageType, flowsheet: FlowsheetBlock
@@ -14,20 +12,21 @@ def create_property_package(
     """
     Create a property package from a schema
     """
-    if property_package_schema.custom:
-        idaes_configuration = encapsulate_custom_property_package(property_package_schema.custom_properties,
-                                                                  property_package_schema.compounds_properties)
-        property_package = GenericExtendedParameterBlock(**idaes_configuration)
-    else:
-        compounds = property_package_schema.compounds
-        type = property_package_schema.type
-        phases = property_package_schema.phases
+    compounds = property_package_schema.compounds
+    type = property_package_schema.type
+    phases = property_package_schema.phases
 
+    if type == "custom":
+        property_package = build_custom_package(property_package_schema)
+    else:
         property_package = build_package(type, compounds)
+    
     property_package_id = property_package_schema.id if property_package_schema.id != -1 else "default"
 
     flowsheet.add_component(f"PP_{property_package_id}", property_package)
     return property_package
+
+
 
 
 class PropertyPackageManager:
