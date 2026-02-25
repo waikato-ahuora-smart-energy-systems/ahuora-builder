@@ -20,7 +20,6 @@ dependencies = [
     { name = "common" },
     { name = "coverage" },
     { name = "idaes-pse" },
-    { name = "pyomo" },
     { name = "scikit-learn" },
     { name = "scipy" },
     { name = "typing-validation" },
@@ -39,8 +38,7 @@ requires-dist = [
     { name = "ahuora-compounds", git = "https://github.com/waikato-ahuora-smart-energy-systems/PropertyPackages.git?rev=v0.0.29" },
     { name = "common" },
     { name = "coverage", specifier = "==7.11.3" },
-    { name = "idaes-pse", specifier = "==2.8.0" },
-    { name = "pyomo", specifier = "==6.9.2" },
+    { name = "idaes-pse", specifier = "==2.10.0" },
     { name = "scikit-learn", specifier = "==1.7.2" },
     { name = "scipy", specifier = "==1.16.3" },
     { name = "typing-validation", specifier = "==1.2.4" },
@@ -449,7 +447,7 @@ wheels = [
 
 [[package]]
 name = "idaes-pse"
-version = "2.8.0"
+version = "2.10.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -462,9 +460,9 @@ dependencies = [
     { name = "scipy" },
     { name = "sympy" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c4/ba/cf68678da817750e940b6a41572ff3cca199e80e718571083c7db016ed3a/idaes_pse-2.8.0.tar.gz", hash = "sha256:04f185568666c7d3f0d60ceb1b9daf2418eb095d6c149ed6fa6e320b137243b6", size = 4649597, upload-time = "2025-03-06T17:00:13.323Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/21/c8/4814bedbc4d2337eb62572844f1db96c975f5d98beea61d2e4efaa150469/idaes_pse-2.10.0.tar.gz", hash = "sha256:9e547042e12fe34db2e6644259b546bdcc4601bde74fd3053ffdc4a7bee561d5", size = 22317974, upload-time = "2025-12-10T23:30:27.576Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6f/7f/68631d3bf1ed8f8598cd1739509ce674b802d82cd95c542c10a6d7706da1/idaes_pse-2.8.0-py3-none-any.whl", hash = "sha256:b2308f6386580268c711e30cf35b5fbb0fb2ed23d49176e66d4607ad2b6ae300", size = 5486287, upload-time = "2025-03-06T17:00:10.247Z" },
+    { url = "https://files.pythonhosted.org/packages/0f/aa/f577d3254d1ca0c527baefc4b9adc78a50faae3fc94c50ff3d1e1138dffc/idaes_pse-2.10.0-py3-none-any.whl", hash = "sha256:924121848367807c5f7ceec6d8f790e3f0e2581253983490ee128ed66e297ec4", size = 5654390, upload-time = "2025-12-10T23:30:25.865Z" },
 ]
 
 [[package]]
@@ -822,15 +820,6 @@ wheels = [
 ]
 
 [[package]]
-name = "ply"
-version = "3.11"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/e5/69/882ee5c9d017149285cab114ebeab373308ef0f874fcdac9beb90e0ac4da/ply-3.11.tar.gz", hash = "sha256:00c7c1aaa88358b9c765b6d3000c6eec0ba42abca5351b095321aef446081da3", size = 159130, upload-time = "2018-02-15T19:01:31.097Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/a3/58/35da89ee790598a0700ea49b2a66594140f44dec458c07e8e3d4979137fc/ply-3.11-py2.py3-none-any.whl", hash = "sha256:096f9b8350b65ebd2fd1346b12452efe5b9607f7482813ffca50c22722a807ce", size = 49567, upload-time = "2018-02-15T19:01:27.172Z" },
-]
-
-[[package]]
 name = "ptyprocess"
 version = "0.7.0"
 source = { registry = "https://pypi.org/simple" }
@@ -913,14 +902,16 @@ wheels = [
 
 [[package]]
 name = "pyomo"
-version = "6.9.2"
+version = "6.10.0"
 source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "ply" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/53/69/84bbedd016eb8a4ab2bcc9dbffd346b266ff631d44552baea01b87862555/pyomo-6.9.2.tar.gz", hash = "sha256:81b2b14ea619244824e1c547cc12602fe9a6e19309cbf0742868c5b1ef37cb35", size = 2946406, upload-time = "2025-04-16T18:55:23.354Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/df/be/6aa8022dec69bf837885a094b9bc8d452debcb455ab69b66ee27cc6563e3/pyomo-6.10.0.tar.gz", hash = "sha256:672fac375e57e121ca935adcc16a1cd118be8afa1a3e5608161fb86220c3a577", size = 3171562, upload-time = "2026-02-20T21:42:31.639Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7f/88/0a07233e39357d3d620186485b927074d6d0ae0f64ad72cc5222ae05844e/pyomo-6.9.2-py3-none-any.whl", hash = "sha256:13ebb2f974f97afa626c2712d4f27e09a1c3d18ca11755676b743504a76e5161", size = 3799154, upload-time = "2025-04-16T18:55:52.044Z" },
+    { url = "https://files.pythonhosted.org/packages/2b/11/ebc9e817490a7992e950cca96b2671c2a490b08f9eb9e4fdc5091c6e77b8/pyomo-6.10.0-cp314-cp314-macosx_10_15_x86_64.whl", hash = "sha256:581dfe7e747c322177e64236cb3fee7fa015d7e6022f66b59394b927f0f29b0a", size = 4431213, upload-time = "2026-02-20T21:49:47.522Z" },
+    { url = "https://files.pythonhosted.org/packages/93/54/f0705ba23eab3f2287e58c3cdd34b51b18e12bbd98dc96bf57defb0eb6cd/pyomo-6.10.0-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:70ab5312b1aa8b95618c3766c3e3f7be3e4d730e41ce24eea1b59eb5831d6817", size = 4416909, upload-time = "2026-02-20T21:49:53.383Z" },
+    { url = "https://files.pythonhosted.org/packages/52/48/8bdf61ee998f65e2e00d65778e2a4cfe41129953a6b0ba72e7a5f5cefdc6/pyomo-6.10.0-cp314-cp314-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:505a1ea36f80125b878d8d0e34f3eb6af2cac3309523011caf1877d88fd16ecd", size = 4514075, upload-time = "2026-02-20T21:49:59.483Z" },
+    { url = "https://files.pythonhosted.org/packages/73/17/62983f857eb592d5ede12f0f41ddbe5d1fa17c2796fb8c3db8ac7859e177/pyomo-6.10.0-cp314-cp314t-macosx_10_15_x86_64.whl", hash = "sha256:905a16f21e90b44d9a52e2aaa9884c467abf50a945d08b9ddb8db40d4d707dbc", size = 4452689, upload-time = "2026-02-20T21:50:05.288Z" },
+    { url = "https://files.pythonhosted.org/packages/67/e3/502d561a64259274c046f705e2325189e84a77c624f043f34fbd2f14e793/pyomo-6.10.0-cp314-cp314t-macosx_11_0_arm64.whl", hash = "sha256:4859fb1a0f78ac0f5fad00199244d461d7bc100c8f76a61d696a1e1461d68bb0", size = 4439487, upload-time = "2026-02-20T21:50:11.116Z" },
+    { url = "https://files.pythonhosted.org/packages/65/bd/cb4535b0bb63a7bcc968464ab739f54d2f4d15fe7924547336f5bd299513/pyomo-6.10.0-cp314-cp314t-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:0590505b282468c9fc2555ced544213227a0a466bbc667826a36cc922afec6d7", size = 4506738, upload-time = "2026-02-20T21:50:17.382Z" },
 ]
 
 [[package]]
