@@ -230,7 +230,7 @@ def test_initialisation_disabled_branch():
     when disable_initialization is True.
     """
     schema = FlowsheetSchema(
-        id=999,
+        group_id=999,
         dynamic=False,
         time_set=[0],
         property_packages=[],

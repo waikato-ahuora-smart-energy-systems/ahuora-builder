@@ -1,5 +1,5 @@
 {
-    "id": 0,
+    "group_id": 0,
     "name": "control_test",
     "description": "inlet enthalpy is controlled by the set point of the outlet enthalpy",
     "dynamic": false,

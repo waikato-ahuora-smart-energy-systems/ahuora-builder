@@ -1,5 +1,5 @@
 {
-    "id": 0,
+    "group_id": 0,
     "name": "BT_PR test",
     "description": "Peng-Robinson test with Benzene and Toluene",
     "dynamic": false,

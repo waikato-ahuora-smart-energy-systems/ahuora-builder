@@ -1,5 +1,5 @@
 {
-    "id": 0,
+    "group_id": 0,
     "name": "vapor_frac_target",
     "description": "compressor_test_with_vapor_fraction - targets an outlet vapor fraction of 1",
     "dynamic": false,
