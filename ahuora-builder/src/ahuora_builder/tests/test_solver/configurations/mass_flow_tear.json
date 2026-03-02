@@ -1,5 +1,5 @@
 {
-    "id": 0,
+    "group_id": 0,
     "name": "mass_flow_tear",
     "description": "recycle with mass flow constraint",
     "dynamic": false,

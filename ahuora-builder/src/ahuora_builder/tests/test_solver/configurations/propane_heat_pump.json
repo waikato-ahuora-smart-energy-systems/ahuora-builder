@@ -1,5 +1,5 @@
 {
-    "id": 0,
+    "group_id": 0,
     "name": "propane_heat_pump",
     "description": "ahuora day propane heat pump",
     "dynamic": false,

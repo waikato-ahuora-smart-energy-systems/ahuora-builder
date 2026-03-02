@@ -20,7 +20,7 @@ def default_time_set():
 
 class FlowsheetSchema(BaseModel):
     """Represents the schema required on a JSON object to define a flowsheet in IDAES."""
-    id: int
+    group_id: int
     name: str = Field(default="")
     description: str = Field(default="")
     dynamic: bool # If the flowsheet is dynamic or steady state
@@ -37,6 +37,6 @@ class FlowsheetSchema(BaseModel):
 
 
 class SolvedFlowsheetSchema(BaseModel):
-    id: int
+    group_id: int
     properties: list[SolvedPropertyValueSchema]
     initial_values: dict[str, dict]

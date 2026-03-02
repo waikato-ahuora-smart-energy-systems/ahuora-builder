@@ -369,7 +369,7 @@ class FlowsheetManager:
             initial_values[str(unit_model_id)] = to_json(unit_model, return_dict=True, wts=StoreSpec.value())
 
         solved_flowsheet = SolvedFlowsheetSchema(
-            id=self.schema.id,
+            group_id=self.schema.group_id,
             properties=serialize_properties_map(self.model.fs),
             initial_values=initial_values
         )

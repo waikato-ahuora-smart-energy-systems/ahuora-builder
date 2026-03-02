@@ -1,5 +1,5 @@
 {
-    "id": 0,
+    "group_id": 0,
     "name": "specification_test",
     "description": "tests that an expression can be evaluated",
     "dynamic": false,

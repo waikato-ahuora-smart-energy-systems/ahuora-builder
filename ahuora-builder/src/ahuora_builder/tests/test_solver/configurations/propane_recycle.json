@@ -1,5 +1,5 @@
 {
-    "id": 0,
+    "group_id": 0,
     "name": "propane_recycle",
     "dynamic": false,
     "property_packages": [
