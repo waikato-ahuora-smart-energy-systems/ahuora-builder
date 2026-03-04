@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "ahuora-compounds==0.0.31",
-    "ahuora-builder-types@file://../ahuora-builder-types/",
+    "ahuora-builder-types",
     "common",
     "coverage==7.11.3",
     "idaes-pse==2.10.0",
