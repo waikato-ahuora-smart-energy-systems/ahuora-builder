@@ -4,7 +4,7 @@ import pyomo.environ as pyo
 from idaes.core import FlowsheetBlock
 from idaes.core.util.model_statistics import degrees_of_freedom
 from idaes.models_extra.power_generation.unit_models.waterpipe import WaterPipe
-from property_packages.build_package import build_package
+from ahuora_property_packages.build_package import build_package
 from idaes.core.util import DiagnosticsToolbox 
 
 def test_waterpipe():

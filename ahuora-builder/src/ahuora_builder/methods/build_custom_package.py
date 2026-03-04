@@ -1,5 +1,5 @@
 from idaes.core.base.property_base import PhysicalParameterBlock
-from property_packages.modular.modular_extended import GenericExtendedParameterBlock
+from ahuora_property_packages.modular.modular_extended import GenericExtendedParameterBlock
 from ahuora_builder_types.flowsheet_schema import PropertyPackageType, CustomCompoundPropertiesSchema
 from idaes.core import LiquidPhase, VaporPhase, Component
 from pyomo.environ import units as pyunits

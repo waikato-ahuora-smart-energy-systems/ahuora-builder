@@ -87,7 +87,7 @@ class PythonFileGenerator:
             "import idaes.logger as idaeslog",
         ])
         self.extend("property_package_imports", [
-            "from property_packages.build_package import build_package",
+            "from ahuora_property_packages.build_package import build_package",
         ])
         self.extend("utility methods", [
             "def units(item: str) -> _PyomoUnit:",

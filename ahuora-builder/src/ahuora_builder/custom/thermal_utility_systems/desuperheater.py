@@ -25,7 +25,7 @@ from idaes.core.solvers import get_solver
 from idaes.core.initialization import ModularInitializerBase
 
 # Other
-from property_packages.build_package import build_package
+from ahuora_property_packages.build_package import build_package
 
 # Logger
 import idaes.logger as idaeslog

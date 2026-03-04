@@ -4,7 +4,7 @@ import pyomo.environ as pyo
 from idaes.core import FlowsheetBlock
 from idaes.core.util.model_statistics import degrees_of_freedom
 from ahuora_builder.custom.thermal_utility_systems.desuperheater import Desuperheater
-from property_packages.build_package import build_package
+from ahuora_property_packages.build_package import build_package
 
 eps_rel = 1e-4 
 eps_abs = 1e-2

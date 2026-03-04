@@ -8,7 +8,7 @@ from idaes.models.properties import iapws95
 from idaes.core.util.initialization import propagate_state
 from idaes.core.util.model_statistics import degrees_of_freedom
 # need to pip install ahuora_compounds@git+https://github.com/waikato-ahuora-smart-energy-systems/PropertyPackages.git@v0.0.25
-from property_packages.build_package import build_package
+from ahuora_property_packages.build_package import build_package
 
 def test_dynamic_tank():
     m = pyo.ConcreteModel()
