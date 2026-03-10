@@ -33,7 +33,7 @@ jobs:
       run: |
           sudo apt-get update
           sudo apt-get install liblapack3 liblapack-dev libgfortran5 libgomp1  # shared libraries for ipopt
-          uv run idaes get-extensions
+          uv run idaes get-extensions --distro ubuntu2204
     
     - name: Run tests
       run: uv run --no-sources pytest
