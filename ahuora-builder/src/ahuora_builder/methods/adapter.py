@@ -307,7 +307,7 @@ def fix_block(
             variable_indexes = list(variable_references.index_set())
 
             if (len(variable_indexes) == 0):
-                print("Warning: No variables found for {property_key} with indexes {discrete_indexes}. This may be expected in the milk property package, which doesn't have a gas phase.")
+                print(f"Warning: No variables found for {property_key} with indexes {discrete_indexes}. This may be expected in the milk property package, which doesn't have a gas phase.")
                 continue
             
             variable_transformed = variable_references
