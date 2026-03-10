@@ -6,7 +6,7 @@ from idaes.core import FlowsheetBlock
 from idaes.core.util.model_statistics import report_statistics, degrees_of_freedom
 from idaes.core.util.tables import _get_state_from_port
 import idaes.logger as idaeslog
-from property_packages.build_package import build_package
+from ahuora_property_packages.build_package import build_package
 from idaes.models.unit_models.pressure_changer import Pump
 from idaes.models.unit_models.heater import Heater
 from ..power_property_package import PowerParameterBlock

@@ -1,6 +1,6 @@
 from idaes.core.base.property_base import PhysicalParameterBlock
 from idaes.core import FlowsheetBlock
-from property_packages.build_package import build_package
+from ahuora_property_packages.build_package import build_package
 from ahuora_builder_types.flowsheet_schema import PropertyPackageType
 from .flowsheet_manager_type import FlowsheetManager
 from ahuora_builder_types import PropertyPackageId

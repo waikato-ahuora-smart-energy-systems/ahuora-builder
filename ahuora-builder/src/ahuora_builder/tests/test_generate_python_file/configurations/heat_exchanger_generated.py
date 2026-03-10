@@ -7,7 +7,7 @@ from idaes.core.util.model_statistics import report_statistics, degrees_of_freed
 from idaes.core.util.tables import _get_state_from_port
 import idaes.logger as idaeslog
 from idaes.models.unit_models.heat_exchanger import delta_temperature_underwood_callback
-from property_packages.build_package import build_package
+from ahuora_property_packages.build_package import build_package
 from ahuora_builder.custom.custom_heat_exchanger import CustomHeatExchanger
 
 

@@ -4,7 +4,7 @@ import pytest
 import pyomo.environ as pyo
 from idaes.core import FlowsheetBlock
 from idaes.core.util.model_statistics import degrees_of_freedom
-from property_packages.build_package import build_package
+from ahuora_property_packages.build_package import build_package
 from pyomo.network import Arc, SequentialDecomposition
 import idaes.logger as idaeslog
 

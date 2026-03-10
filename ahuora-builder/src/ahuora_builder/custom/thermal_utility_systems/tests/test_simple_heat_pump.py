@@ -7,7 +7,7 @@ from ahuora_builder.custom.thermal_utility_systems.simple_heat_pump import (
 import pyomo.environ as pyo
 from idaes.core import FlowsheetBlock
 from idaes.core.util.model_statistics import degrees_of_freedom
-#from property_packages.build_package import build_package # build package still broken for windows users
+#from ahuora_property_packages.build_package import build_package # build package still broken for windows users
 from idaes.models.properties.general_helmholtz import (
     HelmholtzParameterBlock,
     PhaseType,

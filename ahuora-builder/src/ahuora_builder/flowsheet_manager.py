@@ -51,7 +51,7 @@ from .diagnostics.infeasibilities import print_infeasibilities
 from .custom import hda_reaction as reaction_props
 from .custom.hda_ideal_VLE import HDAParameterBlock
 from ahuora_builder.properties_manager import PropertyComponent
-from property_packages.build_package import build_package
+from ahuora_property_packages.build_package import build_package
 
 # from amplpy import modules
 # Import required to allow the library to set the PATH and allow conopt to be found.
