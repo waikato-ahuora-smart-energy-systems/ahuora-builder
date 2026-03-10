@@ -27,7 +27,7 @@ jobs:
         enable-cache: true
     
     - name: Install dependencies
-      run: uv sync --all-extras --dev --no-sources
+      run: uv sync --all-extras --dev 
     
     - name: Setup idaes
       run: |
@@ -36,7 +36,7 @@ jobs:
           uv run idaes get-extensions --distro ubuntu2204
     
     - name: Run tests
-      run: uv run --no-sources pytest
+      run: uv run  pytest
 
 
   publish:
@@ -63,8 +63,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           message: "Bump version"
       - name: Build types
-        run: uv build --package ahuora-builder-types --no-sources
+        run: uv build --package ahuora-builder-types 
       - name: Build package
-        run: uv build --package ahuora-builder --no-sources
+        run: uv build --package ahuora-builder 
       - name: Publish
         run: uv publish

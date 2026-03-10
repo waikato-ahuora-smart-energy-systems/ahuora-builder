@@ -5,7 +5,7 @@ description = "Load a Ahuora .JSON file into a pyomo model."
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-    "ahuora-compounds==0.0.31",
+    "ahuora-compounds==0.0.33",
     "ahuora-builder-types",
     "common",
     "coverage==7.11.3",
@@ -16,7 +16,7 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-ahuora-compounds = {path="../../PropertyPackages", editable=true}
+# ahuora-compounds = {path="../../PropertyPackages", editable=true}
 ahuora-builder-types = { workspace = true }
 
 

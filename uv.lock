@@ -34,8 +34,8 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "ahuora-builder-types", editable = "ahuora-builder-types" },
-    { name = "ahuora-compounds", editable = "../PropertyPackages" },
+    { name = "ahuora-builder-types" },
+    { name = "ahuora-compounds", specifier = "==0.0.31" },
     { name = "common" },
     { name = "coverage", specifier = "==7.11.3" },
     { name = "idaes-pse", specifier = "==2.10.0" },
@@ -63,24 +63,15 @@ requires-dist = [{ name = "pydantic", specifier = ">=2.12.4" }]
 
 [[package]]
 name = "ahuora-compounds"
-source = { editable = "../PropertyPackages" }
+version = "0.0.31"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pydantic" },
     { name = "typing-validation" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "idaes-pse", marker = "extra == 'ahuora-property-packages'" },
-    { name = "pydantic" },
-    { name = "typing-validation" },
-]
-provides-extras = ["ahuora-property-packages"]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "hatch", specifier = ">=1.16.3" },
-    { name = "pytest", specifier = ">=9.0.2" },
+sdist = { url = "https://files.pythonhosted.org/packages/db/f2/5536df53bc872124a339294088f5bf27f949d27384073644add23998287c/ahuora_compounds-0.0.31.tar.gz", hash = "sha256:267511d6082f0b398e349e30bce070fbc131363cfd14f18bb046d13c4cad64bb", size = 640224, upload-time = "2026-03-02T01:33:44.53Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9e/fc/aa6689f0659736d08f7219460876765d06cbfa0f5bede442b77cae21030f/ahuora_compounds-0.0.31-py3-none-any.whl", hash = "sha256:0271b08ee0a2f99bd2b794e8f11cce2f53b043749779d3b23f3378c80c275c5a", size = 1399686, upload-time = "2026-03-02T01:33:42.701Z" },
 ]
 
 [[package]]
