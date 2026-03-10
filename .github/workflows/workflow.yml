@@ -36,7 +36,7 @@ jobs:
           uv run idaes get-extensions
     
     - name: Run tests
-      run: uv run pytest
+      run: uv run --no-sources pytest
 
 
   publish:
