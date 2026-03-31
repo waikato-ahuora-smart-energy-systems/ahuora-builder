@@ -53,6 +53,7 @@ from .custom.hda_ideal_VLE import HDAParameterBlock
 from ahuora_builder.properties_manager import PropertyComponent
 from ahuora_property_packages.build_package import build_package
 
+
 # from amplpy import modules
 # Import required to allow the library to set the PATH and allow conopt to be found.
 
@@ -308,9 +309,12 @@ class FlowsheetManager:
 
             print(f"Initializing unit {unit}")
             self.timing.add_timing(f"init_{unit.name}")
-            #unit.display()
-            unit.initialize(outlvl=idaeslog.INFO)
-            #unit.report()
+            try:
+                #unit.display()
+                unit.initialize(outlvl=idaeslog.INFO)
+                #unit.report()
+            except Exception as e:
+                print(f"Error occurred while initializing unit {unit}: {e}")
 
         self.timing.add_timing("setup_sequential_decomposition")
         # Use SequentialDecomposition to initialise the model
@@ -402,6 +406,9 @@ class FlowsheetManager:
         dt.report_numerical_issues()
         dt.display_near_parallel_constraints()
         dt.display_variables_at_or_outside_bounds()
+        dt.display_variables_near_bounds()
+        dt.display_constraints_with_extreme_jacobians()
+        dt.display_constraints_with_large_residuals()
         print("=== END DIAGNOSTICS ===")
 
     def degrees_of_freedom(self) -> int:
@@ -417,6 +424,7 @@ class FlowsheetManager:
         the model is not valid.
         """
         self.timing.add_timing("check_model_valid")
+        
         degrees_of_freedom = self.degrees_of_freedom()
         if degrees_of_freedom != 0:
             #self.model.display()  # prints the vars/constraints for debugging
